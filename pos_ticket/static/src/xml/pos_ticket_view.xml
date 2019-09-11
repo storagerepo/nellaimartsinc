@@ -27,13 +27,19 @@
                         <img src='/web/binary/company_logo' style="width:100%"/>
                     </div>
                 </div>
-                <t t-if="widget.pos.company.name">
-                    <div style="width:100%;text-align:right;"><t t-esc="widget.pos.company.name"/></div>
-                </t>
                 <t t-if="widget.pos.company.email">
                     <div style="width:100%;text-align:right;"><t t-esc="widget.pos.company.email"/></div>
                 </t>
                 <br />
+                <div style='text-align:right'>
+                    <t t-esc="widget.pos.company.street"/>,<br/>
+                    <t t-if="widget.pos.company.street2" t-esc="widget.pos.company.street2"/>
+                        <span t-if="widget.pos.company.street2">,</span>
+                    <br t-if="widget.pos.company.street2"/>
+                    <t t-esc="widget.pos.company.city"/>,<br />
+                    <t t-esc="widget.pos.company.state_id[1]"/>,
+                    <t t-esc="widget.pos.company.zip"/><br />
+                </div>
                 <t t-if="receipt.header">
                     <div style='text-align:center'>
                         <t t-esc="receipt.header" />
@@ -47,11 +53,11 @@
                         <col width='15%' />
                         <col width='30%' />
                     </colgroup>
-                    <tr style="border: 1px solid rgb(0, 0, 0);">
+                    <tr style="border-bottom: 1px solid rgb(0, 0, 0);">
                         <th>Name</th>
                         <th>Qty</th>
                         <th>Price</th>
-                        <th>Value</th>
+                        <th style="text-align:right">Value</th>
                     </tr>
                     <tr t-foreach="orderlines" t-as="orderline">
                         <td>
@@ -153,6 +159,9 @@
                         <t t-esc="widget.format_currency(order.get_change())"/>
                         </td></tr>
                 </table>
+                <div style="text-align:center">
+                    Thank you for Shopping with us!
+                </div>
             </div>
         </t>
     </t>
