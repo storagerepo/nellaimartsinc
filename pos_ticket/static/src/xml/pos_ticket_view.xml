@@ -31,15 +31,6 @@
                     <div style="width:100%;text-align:right;"><t t-esc="widget.pos.company.email"/></div>
                 </t>
                 <br />
-                <div style='text-align:right'>
-                    <t t-esc="widget.pos.company.street"/>,<br/>
-                    <t t-if="widget.pos.company.street2" t-esc="widget.pos.company.street2"/>
-                        <span t-if="widget.pos.company.street2">,</span>
-                    <br t-if="widget.pos.company.street2"/>
-                    <t t-esc="widget.pos.company.city"/>,<br />
-                    <t t-esc="widget.pos.company.state_id[1]"/>,
-                    <t t-esc="widget.pos.company.zip"/><br />
-                </div>
                 <t t-if="receipt.header">
                     <div style='text-align:center'>
                         <t t-esc="receipt.header" />
