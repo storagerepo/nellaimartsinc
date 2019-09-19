@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="craig_business_homepage" model="ir.ui.view">
+        <field name="name">Craig Business Homepage</field>
+        <field name="type">qweb</field>
+        <field name="key">website.craig-business-homepage</field>
+        <field name="arch" type="xml">
+            <t name="Craig Business Homepage" t-name="website.craig-business-homepage">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure">
+                        <div id="myCarousel1492763670612" class="carousel slide s_carousel s_carousel_default"
+                             data-interval="10000" style="height: 520px;">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel1492763670612" data-slide-to="0" class="active"/>
+                                <li data-target="#myCarousel1492763670612" data-slide-to="1"/>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item bg-alpha active oe_img_bg"
+                                     style="background-image: url(&quot;/web_theme_craig/static/src/img/slider-2.jpg&quot;);">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="offset-md-1 mt128 mb128">
+                                                <h1 class="my-2 _default_snippet_text">Start your garden
+                                                    <br/>
+                                                    with best method
+                                                </h1>
+                                                <h4 class="o_default_snippet_text">A business, also known as an
+                                                    enterprise, agency, or a firm,
+                                                    <br/>
+                                                    is an entity involved in the provision of goods, services.
+                                                </h4>
+                                                <p>
+                                                    <a href="/page/website.contactus"
+                                                       class="mb8 mt8 btn btn-info btn-large o_default_snippet_text">
+                                                        Learn More
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item bg-alpha oe_img_bg"
+                                     style="background-image: url(&quot;/web_theme_craig/static/src/img/slider-1.jpg&quot;);">
+                                    <div class="container">
+                                        <div class="row text-center">
+                                            <div class="col-md-12 mt128 mb128">
+                                                <h1 class="my-2 o_default_snippet_text">We Providing Landscaping</h1>
+                                                <h3 class="my-2 o_default_snippet_text">Services Since 1996</h3>
+                                                <div class='discripation mt16 mb16'>Landscape design is much more than
+                                                    simply planting a few trees and shrubs around your property.
+                                                </div>
+                                                <p>
+                                                    <a href="/page/website.contactus"
+                                                       class="mb8 mt8 btn btn-info btn-large o_default_snippet_text">
+                                                        Contact us
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-control-prev" data-target="#myCarousel1492763670612" data-slide="prev"
+                                 role="img" aria-label="Previous" title="Previous">
+                                <span class="carousel-control-prev-icon"/>
+                                <span class="sr-only o_default_snippet_text">Previous</span>
+                            </div>
+                            <div class="carousel-control-next" data-target="#myCarousel1492763670612" data-slide="next"
+                                 role="img" aria-label="Next" title="Next">
+                                <span class="carousel-control-next-icon"/>
+                                <span class="sr-only o_default_snippet_text">Next</span>
+                            </div>
+                        </div>
+                        <section class="s_about_us bg-white" id="s_about_us">
+                            <div class="container">
+                                <div class="row mt32 mb32">
+                                    <div class="col-md-4 col-sm-12 mt32 mb32">
+                                        <img src="/web_theme_craig/static/src/img/s_about_us.png" alt=""
+                                             class="img img-fluid"/>
+                                        <div class="content-wrapper text-center">
+                                            <div class="content-wrapper-about">
+                                                <a href="#" class="name o_default_snippet_text">Lara Crostina</a>
+                                                <div class="position o_default_snippet_text">Grass Owner</div>
+                                                <div class="content-text o_default_snippet_text">Hi everyone, i hope you
+                                                    will like our gardening service and gardener.
+                                                </div>
+                                                <div class="social-wrapper mb24">
+                                                    <ul class="list-unstyled list-inline list-social-wrapper">
+                                                        <li class="list-inline-item">
+                                                            <a href="#" class="link">
+                                                                <i class="slz-icon fa fa-facebook"/>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#" class="link">
+                                                                <i class="slz-icon fa fa-twitter"/>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#" class="link">
+                                                                <i class="slz-icon fa fa-pinterest-p"/>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#" title="&quot;#&quot;" class="link">
+                                                                <i class="slz-icon fa fa-google-plus"/>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-12 mt32 mb32">
+                                        <div class="vc_column-inner vc_custom_1489562267671">
+                                            <div class="wpb_wrapper">
+                                                <div class="slz-shortcode sc_main_title main-title-202086650658f5e37a43178 text-l has-image">
+                                                    <div class="slz-main-title">
+                                                        <div class="icon-wrapper">
+                                                            <i class="slz-icon fa fa-pagelines"/>
+                                                        </div>
+                                                        <h2 class="title o_default_snippet_text">WELCOME TO GRASS
+                                                            COMPANY
+                                                        </h2>
+                                                        <div class="subtitle">
+                                                            <span class="subtitle-inner o_default_snippet_text">Some
+                                                                Word About Us
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_column content_element mt32">
+                                                    <div class="wrapper">
+                                                        <p class="o_default_snippet_text">Have you ever finally just
+                                                            gave in to the temptation and read your horoscope line in
+                                                            the newspaper on Sunday morning? Sure, we all have. For most
+                                                            of us, it’s a curiosity, an amusement to see what they say
+                                                            our day will be like based on the sign of the zodiac that we
+                                                            were born under.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space" style="height: 30px">
+                                                    <span class="vc_empty_space_inner"/>
+                                                </div>
+                                                <div id="myCarousel1492765984350"
+                                                     class="carousel slide s_carousel s_carousel_default"
+                                                     data-interval="10000">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="card">
+                                                                        <img class="card-img-top"
+                                                                             src="/web_theme_craig/static/src/img/service-01.jpg"
+                                                                             alt="Chania"/>
+                                                                        <div class="card-block">
+                                                                            <h4 class="card-title o_default_snippet_text">
+                                                                                Lawn And Flowers Decoration
+                                                                            </h4>
+                                                                            <div class="card-text o_default_snippet_text">
+                                                                                There is a moment in the life of any
+                                                                                aspiring astronomer an that it is time
+                                                                                to
+                                                                                buy that first telescope.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pt-3">
+                                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                                <span class="text o_default_snippet_text">
+                                                                                    Read More
+                                                                                </span>
+                                                                                <span class="icons fa fa-angle-double-right"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="card">
+                                                                        <img class="card-img-top"
+                                                                             src="/web_theme_craig/static/src/img/service-05.jpg"
+                                                                             alt="Chania"/>
+                                                                        <div class="card-block">
+                                                                            <h4 class="card-title o_default_snippet_text">
+                                                                                Lawn Care &amp;amp; Maintenance
+                                                                            </h4>
+                                                                            <div class="card-text o_default_snippet_text">
+                                                                                There is a moment in the life of any
+                                                                                aspiring astronomer an that it is time
+                                                                                to
+                                                                                buy that first telescope.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pt-3">
+                                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                                <span class="text o_default_snippet_text">
+                                                                                    Read More
+                                                                                </span>
+                                                                                <span class="icons fa fa-angle-double-right"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="card">
+                                                                        <img class="card-img-top"
+                                                                             src="/web_theme_craig/static/src/img/service-05.jpg"
+                                                                             alt="Chania"/>
+                                                                        <div class="card-block">
+                                                                            <h4 class="card-title o_default_snippet_text">
+                                                                                Lawn Care &amp;amp; Maintenance
+                                                                            </h4>
+                                                                            <div class="card-text o_default_snippet_text">
+                                                                                There is a moment in the life of any
+                                                                                aspiring astronomer an that it is time
+                                                                                to
+                                                                                buy that first telescope.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pt-3">
+                                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                                <span class="text o_default_snippet_text">
+                                                                                    Read More
+                                                                                </span>
+                                                                                <span class="icons fa fa-angle-double-right"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="card">
+                                                                        <img class="card-img-top"
+                                                                             src="/web_theme_craig/static/src/img/service-06.jpg"
+                                                                             alt="Chania"/>
+                                                                        <div class="card-block">
+                                                                            <h4 class="card-title o_default_snippet_text">
+                                                                                Flower Decoration
+                                                                            </h4>
+                                                                            <div class="card-text o_default_snippet_text">
+                                                                                There is a moment in the life of any
+                                                                                aspiring astronomer an that it is time
+                                                                                to
+                                                                                buy that first telescope.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pt-3">
+                                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                                <span class="text o_default_snippet_text">
+                                                                                    Read More
+                                                                                </span>
+                                                                                <span class="icons fa fa-angle-double-right"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="card">
+                                                                        <img class="card-img-top"
+                                                                             src="/web_theme_craig/static/src/img/service-06.jpg"
+                                                                             alt="Chania"/>
+                                                                        <div class="card-block">
+                                                                            <h4 class="card-title o_default_snippet_text">
+                                                                                Flower Decoration
+                                                                            </h4>
+                                                                            <div class="card-text o_default_snippet_text">
+                                                                                There is a moment in the life of any
+                                                                                aspiring astronomer an that it is time
+                                                                                to
+                                                                                buy that first telescope.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pt-3">
+                                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                                <span class="text o_default_snippet_text">
+                                                                                    Read More
+                                                                                </span>
+                                                                                <span class="icons fa fa-angle-double-right"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="card">
+                                                                        <img class="card-img-top"
+                                                                             src="/web_theme_craig/static/src/img/service-01.jpg"
+                                                                             alt="Chania"/>
+                                                                        <div class="card-block">
+                                                                            <h4 class="card-title o_default_snippet_text">
+                                                                                Lawn And Flowers Decoration
+                                                                            </h4>
+                                                                            <div class="card-text o_default_snippet_text">
+                                                                                There is a moment in the life of any
+                                                                                aspiring astronomer an that it is time
+                                                                                to
+                                                                                buy that first telescope.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pt-3">
+                                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                                <span class="text o_default_snippet_text">
+                                                                                    Read More
+                                                                                </span>
+                                                                                <span class="icons fa fa-angle-double-right"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_service bg-white" id="s_service">
+                            <div class="container">
+                                <div class="row mt32 mb32">
+                                    <div class="col-md-12 slz-main-title text-center">
+                                        <div class="has-line mt8 mb16"/>
+                                        <h2 class="title o_default_snippet_text">OUR MAIN SERVICES</h2>
+                                        <div class="description o_default_snippet_text">Discovered the lens win the
+                                            bifocal eye-glasses ,then recently they do the same thing in a bifocal
+                                            contact lens. The lens is divided into two halves eye glasses.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt16 mb32">
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-tree"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Flowers Decoration</div>
+                                                    <div class="description o_default_snippet_text">It is probably the
+                                                        dream of any amateur in an astronomer to be able to be .
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-pagelines"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Waste Removal</div>
+                                                    <div class="description o_default_snippet_text">The first thing that
+                                                        comes to mind after do on the surgery is whether to down the
+                                                        size.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-leaf"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Wedding Decoration</div>
+                                                    <div class="description o_default_snippet_text">Breast implant that
+                                                        you would like to do the surgeon to place inside your chest that capture.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-sun-o"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Lawn Maintenance</div>
+                                                    <div class="description o_default_snippet_text">In the life of any
+                                                        aspiring astronomer that it is time to buy that first telescope that capture.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-scissors"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Grass Cutting</div>
+                                                    <div class="description o_default_snippet_text">Of all of the
+                                                        celestial bodies that capture our attention and fascination that capture.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-building"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell ">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Stone Walls</div>
+                                                    <div class="description o_default_snippet_text">There is a lot of
+                                                        exciting stuff going on in an the stars above us that make that capture.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_testimonial_faq bg-100" id="s_testimonial_faq">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <section class="testimonial oe_structure"
+                                                 style="background-image: url(/web_theme_craig/static/src/img/testimonial-bg01.jpg);">
+                                            <div class="slz-shortcode sc_main_title text-l has-image">
+                                                <div class="slz-main-title">
+                                                    <div class="icon-wrapper">
+                                                        <i class="slz-icon fa fa-pagelines fa-2x"/>
+                                                    </div>
+                                                    <h2 class="title o_default_snippet_text">CUSTOMER SAYS</h2>
+                                                    <div class="subtitle">
+                                                        <span class="subtitle-inner o_default_snippet_text">
+                                                            Testimonial
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div id="myCarousel1492766529533"
+                                                     class="carousel slide s_banner_testimonial mt16 mb16"
+                                                     data-interval="10000">
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#myCarousel1492766529533" data-slide-to="0" class="active"/>
+                                                        <li data-target="#myCarousel1492766529533" data-slide-to="1"/>
+                                                        <li data-target="#myCarousel1492766529533" data-slide-to="2"/>
+                                                    </ol>
+                                                    <div class="carousel-inner text-center">
+                                                        <div class="carousel-item active">
+                                                            <div class="row">
+                                                                <div class="mt96 mb96">
+                                                                    <div class="mt8 mb8">
+                                                                        <i class="fa fa-quote-left fa-3x"/>
+                                                                    </div>
+                                                                    <p class="o_default_snippet_text">Sed ut
+                                                                        perspiciatis unde omnis iste natus error sit
+                                                                        voluptatem accusantium doloremque
+                                                                        laudantium, totam rem aperiam, eaque ipsa
+                                                                        quae ab illo inventore veritatis et quasi
+                                                                        architecto beatae vitae dicta sunt
+                                                                        explicabo. Nemo enim ipsam voluptatem quia
+                                                                        voluptas sit aspernatur aut odit aut fugit,
+                                                                        sed quia consequuntur magni dolores eos qui
+                                                                        ratione voluptatem sequi nesciunt.
+                                                                    </p>
+                                                                    <div class="wrap_quote_title mt16">
+                                                                        <h4 class="quote_title o_default_snippet_text">
+                                                                            Bruno Fibonacci
+                                                                        </h4>
+                                                                        <span class="quote_subtitle o_default_snippet_text">
+                                                                            Space Jam Co.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item oe_img_bg">
+                                                            <div class="row">
+                                                                <div class="mt96 mb96">
+                                                                    <div class="mt8 mb8">
+                                                                        <i class="fa fa-quote-left fa-3x"/>
+                                                                    </div>
+                                                                    <p class="o_default_snippet_text">Sed ut
+                                                                        perspiciatis unde omnis iste natus error sit
+                                                                        voluptatem accusantium doloremque
+                                                                        laudantium, totam rem aperiam, eaque ipsa
+                                                                        quae ab illo inventore veritatis et quasi
+                                                                        architecto beatae vitae dicta sunt
+                                                                        explicabo. Nemo enim ipsam voluptatem quia
+                                                                        voluptas sit aspernatur aut odit aut fugit,
+                                                                        sed quia consequuntur magni dolores eos qui
+                                                                        ratione voluptatem sequi nesciunt.
+                                                                    </p>
+                                                                    <div class="wrap_quote_title mt16">
+                                                                        <h4 class="quote_title o_default_snippet_text">
+                                                                            Bruno Fibonacci
+                                                                        </h4>
+                                                                        <span class="quote_subtitle o_default_snippet_text">
+                                                                            Space Jam Co.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item oe_img_bg">
+                                                            <div class="row">
+                                                                <div class="mt96 mb96">
+                                                                    <div class="mt8 mb8">
+                                                                        <i class="fa fa-quote-left fa-3x"/>
+                                                                    </div>
+                                                                    <p class="o_default_snippet_text">Sed ut
+                                                                        perspiciatis unde omnis iste natus error sit
+                                                                        voluptatem accusantium doloremque
+                                                                        laudantium, totam rem aperiam, eaque ipsa
+                                                                        quae ab illo inventore veritatis et quasi
+                                                                        architecto beatae vitae dicta sunt
+                                                                        explicabo. Nemo enim ipsam voluptatem quia
+                                                                        voluptas sit aspernatur aut odit aut fugit,
+                                                                        sed quia consequuntur magni dolores eos qui
+                                                                        ratione voluptatem sequi nesciunt.
+                                                                    </p>
+                                                                    <div class="wrap_quote_title mt16">
+                                                                        <h4 class="quote_title o_default_snippet_text">
+                                                                            Bruno Fibonacci
+                                                                        </h4>
+                                                                        <span class="quote_subtitle o_default_snippet_text">
+                                                                            Space Jam Co.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <section class="faq">
+                                            <div class="slz-main-title">
+                                                <div class="icon-wrapper">
+                                                    <i class="slz-icon fa fa-pagelines fa-2x"/>
+                                                </div>
+                                                <h2 class="title o_default_snippet_text">Frequently Asked Questions</h2>
+                                            </div>
+                                            <div class="mt64 mb64" id="myCollapse1492766529535">
+                                                <div class="card mt16 mb16">
+                                                    <h4 class="card-header">
+                                                        <a data-toggle="collapse" href="#collapse1"
+                                                           class="o_default_snippet_text"
+                                                           data-parent="#myCollapse1492766529535"
+                                                           data-target="#collapse1">What if the weather is wet?
+                                                            <i class="fa fa-plus"/>
+                                                        </a>
+                                                    </h4>
+                                                    <div id="collapse1" class="collapse show">
+                                                        <div class="card-body o_default_snippet_text">We will still
+                                                            come for your scheduled visit and carry out the tasks which
+                                                            are possible. We use mowers which are designed to cut in all
+                                                            but the wettest conditions, and where possible we avoid
+                                                            standing in borders while weeding to avoid compaction of the
+                                                            soil.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card mt16 mb16">
+                                                        <h4 class="card-header">
+                                                            <a class="collapsed o_default_snippet_text"
+                                                               data-toggle="collapse" href="#collapse2"
+                                                               data-parent="#myCollapse1492766529535"
+                                                               data-target="#collapse2">What about the winter?
+                                                                <i class="fa fa-plus"/>
+                                                            </a>
+                                                        </h4>
+                                                    <div id="collapse2" class="collapse">
+                                                        <div class="card-body o_default_snippet_text">I am text block.
+                                                            Click edit button to change this text. Lorem ipsum dolor sit
+                                                            amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                                                            nec ullamcorper mattis, pulvinar dapibus leo.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card mt16 mb16">
+                                                        <h4 class="card-header">
+                                                            <a class="collapsed o_default_snippet_text"
+                                                               data-toggle="collapse" href="#collapse3"
+                                                               data-parent="#myCollapse1492766529535"
+                                                               data-target="#collapse3">What if I want to cancel?
+                                                                <i class="fa fa-plus"/>
+                                                            </a>
+                                                        </h4>
+                                                    <div id="collapse3" class="collapse">
+                                                        <div class="card-body o_default_snippet_text">I am text block.
+                                                            Click edit button to change this text. Lorem ipsum dolor sit
+                                                            amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                                                            nec ullamcorper mattis, pulvinar dapibus leo.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card mt16 mb16">
+                                                        <h4 class="card-header">
+                                                            <a class="collapsed o_default_snippet_text"
+                                                               data-toggle="collapse" href="#collapse4"
+                                                               data-parent="#myCollapse1492766529535"
+                                                               data-target="#collapse4">Will I have the same gardener
+                                                                every time?
+                                                                <i class="fa fa-plus"/>
+                                                            </a>
+                                                        </h4>
+                                                    <div id="collapse4" class="collapse">
+                                                        <div class="card-body o_default_snippet_text">I am text block.
+                                                            Click edit button to change this text. Lorem ipsum dolor sit
+                                                            amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                                                            nec ullamcorper mattis, pulvinar dapibus leo.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_our_team bg-white" id="s_our_team">
+                            <div class="container">
+                                <div class="oe_structure">
+                                    <div class="row mt32 mb32 text-center">
+                                        <div class="col-md-12 slz-main-title">
+                                            <div class="icon-wrapper">
+                                                <i class="slz-icon fa fa-pagelines fa-2x"/>
+                                            </div>
+                                            <h2 class="title o_default_snippet_text my-2">MEET OUR GARDENER</h2>
+                                            <div class="subtitle">
+                                                <span class="subtitle-inner o_default_snippet_text">Team Member</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt32 mb32 text-center">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 mt16">
+                                            <div class="team">
+                                                <div class="team_image">
+                                                    <img class="img img-fluid"
+                                                         src="/web_theme_craig/static/src/img/team.jpg"/>
+                                                </div>
+                                                <div class="team-content">
+                                                    <div class="content-wrapper">
+                                                        <a href="#" class="title name o_default_snippet_text"
+                                                           tabindex="0">David Benjamin
+                                                        </a>
+                                                        <div class="position o_default_snippet_text">Senior Gardener
+                                                        </div>
+                                                        <div class="social-list">
+                                                            <a href="#" class="social-item facebook" tabindex="0">
+                                                                <i class="slz-icons fa fa-facebook"/>
+                                                                <span class="text o_default_snippet_text">Facebook
+                                                                </span>
+                                                            </a>
+                                                            <a href="#" class="social-item twitter" tabindex="0">
+                                                                <i class="slz-icons fa fa-twitter"/>
+                                                                <span class="text o_default_snippet_text">Twitter</span>
+                                                            </a>
+                                                            <a href="#" class="social-item google-plus" tabindex="0">
+                                                                <i class="slz-icons fa fa-google-plus"/>
+                                                                <span class="text o_default_snippet_text">Google+</span>
+                                                            </a>
+                                                            <a href="#" class="social-item pinterest" tabindex="0">
+                                                                <i class="slz-icons fa fa-pinterest"/>
+                                                                <span class="text o_default_snippet_text">Pinterest
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 col-xs-12 mt16 mb16">
+                                            <div class="team">
+                                                <div class="team_image">
+                                                    <img class="img img-fluid"
+                                                         src="/web_theme_craig/static/src/img/team05.jpg"/>
+                                                </div>
+                                                <div class="team-content">
+                                                    <div class="content-wrapper">
+                                                        <a href="#" class="title name o_default_snippet_text"
+                                                           tabindex="0">Mary Sulvian
+                                                        </a>
+                                                        <div class="position o_default_snippet_text">Senior Gardener
+                                                        </div>
+                                                        <div class="social-list">
+                                                            <a href="#" class="social-item facebook" tabindex="0">
+                                                                <i class="slz-icons fa fa-facebook"/>
+                                                                <span class="text o_default_snippet_text">Facebook
+                                                                </span>
+                                                            </a>
+                                                            <a href="#" class="social-item twitter" tabindex="0">
+                                                                <i class="slz-icons fa fa-twitter"/>
+                                                                <span class="text o_default_snippet_text">Twitter</span>
+                                                            </a>
+                                                            <a href="#" class="social-item google-plus" tabindex="0">
+                                                                <i class="slz-icons fa fa-google-plus"/>
+                                                                <span class="text o_default_snippet_text">Google+</span>
+                                                            </a>
+                                                            <a href="#" class="social-item pinterest" tabindex="0">
+                                                                <i class="slz-icons fa fa-pinterest"/>
+                                                                <span class="text o_default_snippet_text">Pinterest
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 col-xs-12 mt16 mb16">
+                                            <div class="team">
+                                                <div class="team_image">
+                                                    <img class="img img-fluid"
+                                                         src="/web_theme_craig/static/src/img/team04.jpg"/>
+                                                </div>
+                                                <div class="team-content">
+                                                    <div class="content-wrapper">
+                                                        <a href="#" class="title name o_default_snippet_text"
+                                                           tabindex="0">John Mathew
+                                                        </a>
+                                                        <div class="position o_default_snippet_text">Senior Gardener
+                                                        </div>
+                                                        <div class="social-list">
+                                                            <a href="#" class="social-item facebook" tabindex="0">
+                                                                <i class="slz-icons fa fa-facebook"/>
+                                                                <span class="text o_default_snippet_text">Facebook
+                                                                </span>
+                                                            </a>
+                                                            <a href="#" class="social-item twitter" tabindex="0">
+                                                                <i class="slz-icons fa fa-twitter"/>
+                                                                <span class="text o_default_snippet_text">Twitter</span>
+                                                            </a>
+                                                            <a href="#" class="social-item google-plus" tabindex="0">
+                                                                <i class="slz-icons fa fa-google-plus"/>
+                                                                <span class="text o_default_snippet_text">Google+</span>
+                                                            </a>
+                                                            <a href="#" class="social-item pinterest" tabindex="0">
+                                                                <i class="slz-icons fa fa-pinterest"/>
+                                                                <span class="text o_default_snippet_text">Pinterest
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 col-xs-12 mt16 mb16">
+                                            <div class="team">
+                                                <div class="team_image">
+                                                    <img class="img img-fluid"
+                                                         src="/web_theme_craig/static/src/img/team02.jpg"/>
+                                                </div>
+                                                <div class="team-content">
+                                                    <div class="content-wrapper">
+                                                        <a href="#" class="title name o_default_snippet_text"
+                                                           tabindex="0">Laura Keith
+                                                        </a>
+                                                        <div class="position o_default_snippet_text">Senior Gardener
+                                                        </div>
+                                                        <div class="social-list">
+                                                            <a href="#" class="social-item facebook" tabindex="0">
+                                                                <i class="slz-icons fa fa-facebook"/>
+                                                                <span class="text o_default_snippet_text">Facebook
+                                                                </span>
+                                                            </a>
+                                                            <a href="#" class="social-item twitter" tabindex="0">
+                                                                <i class="slz-icons fa fa-twitter"/>
+                                                                <span class="text o_default_snippet_text">Twitter</span>
+                                                            </a>
+                                                            <a href="#" class="social-item google-plus" tabindex="0">
+                                                                <i class="slz-icons fa fa-google-plus"/>
+                                                                <span class="text o_default_snippet_text">Google+</span>
+                                                            </a>
+                                                            <a href="#" class="social-item pinterest" tabindex="0">
+                                                                <i class="slz-icons fa fa-pinterest"/>
+                                                                <span class="text o_default_snippet_text">Pinterest
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_blog_carousel bg-white js_get_objects" data-loading="true"
+                                 data-template="snippet_blog_carousel_73lines.blog_list_template"
+                                 data-object_name="blog.post"/>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="craig_business_homepage_page" model="website.page">
+        <field name="url">/business</field>
+        <field name="website_published">True</field>
+        <field name="view_id" ref="craig_business_homepage"/>
+    </record>
+</odoo>

@@ -1,0 +1,53 @@
+footer {
+  #footer {
+    section {
+      div.row.footer-top-col-4.footer-1 {
+        div.sidebar.col-md-6.col-sm-6.col-1 {
+          #text-8 {
+            li {
+              a {
+                //color:#fff;
+                &:hover {
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .sidebar .widget_text a {
+      font-weight: 400;
+    }
+  }
+
+  #copyright {
+    padding-top: 10px;
+    color: #fff;
+
+    &:hover {
+      color: $primary;
+    }
+
+    background-color: darken($success, 10%);
+
+    #social_block > ul > li {
+      padding: 5px;
+      padding-left: 10px;
+      border: 1px solid transparent;
+      border-radius: 68%;
+      padding-right: 10px;
+      margin-right: 5px;
+      background: #00720c;
+
+      &:hover {
+        background: #fff;
+
+        a {
+          color: $success !important;
+        }
+      }
+    }
+  }
+}

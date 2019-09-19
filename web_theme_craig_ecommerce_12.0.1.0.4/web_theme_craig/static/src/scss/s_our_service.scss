@@ -1,0 +1,38 @@
+#s_our_service {
+  .single_service > p:after {
+    background: #ffcb3d;
+    content: "";
+    height: 82%;
+    left: 0;
+    position: absolute;
+    top: 8px;
+    width: 1px;
+  }
+
+  .single_service > p {
+    color: #8e8e8e;
+    font-size: 13px;
+    line-height: 21px;
+    padding-left: 20px;
+    position: relative;
+    font-weight: 300;
+  }
+  .single_service h4 {
+    a {
+      color: #333;
+    }
+    font-weight: 500;
+    margin-bottom: 13px;
+    font-size: 17px;
+  }
+  .section_title h6 {
+    color: $primary;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .section_title h2 {
+    margin-top: 0;
+  }
+}

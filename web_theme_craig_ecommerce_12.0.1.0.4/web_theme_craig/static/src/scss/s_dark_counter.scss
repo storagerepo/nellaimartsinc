@@ -1,0 +1,110 @@
+#state_section_id {
+  .count_to {
+    width: 234px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+  }
+
+  .odometer {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .light .odometer {
+    color: #fff !important;
+  }
+
+  .odometer {
+    line-height: 48px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 38px;
+  }
+
+  .count_to {
+    width: 234px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+  }
+
+  .odometer {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .light .odometer {
+    color: #fff !important;
+  }
+
+  .odometer {
+    line-height: 48px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 38px;
+  }
+
+  .state_section-dark {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .state_section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .state_section h1 {
+    padding-bottom: 25px;
+  }
+
+  .state_section-dark h4 {
+    padding-bottom: 25px;
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 28px;
+  }
+
+  .state_section h4 {
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 28px;
+  }
+
+  .state_section h3 {
+    text-align: center;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  .state_section h3 {
+    opacity: 0.75;
+  }
+
+  .state_section i {
+    text-align: center;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}

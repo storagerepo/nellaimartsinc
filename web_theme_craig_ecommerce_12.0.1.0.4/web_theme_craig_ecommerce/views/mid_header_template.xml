@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="web_theme_craig_ecommerce_show_cart"
+              inherit_id="web_theme_craig.company_details_mid_header"
+              name="Show Cart" active="True" customize_show="True">
+        <xpath expr="//div[@id='mid-header-bottom-right']" position="inside">
+            <div class="col-md-3 col-sm-3 col-xs-3 mb24 text-left cart_contents ml-5"
+                 id="header_my_cart">
+                <t t-call="web_theme_craig_ecommerce.website_mid_header_add_to_cart"/>
+            </div>
+        </xpath>
+    </template>
+
+    <!--Search Box-->
+    <template id="web_theme_craig_ecommerce_search"
+              inherit_id="web_theme_craig.company_details_mid_header"
+              name="Show Search" active="True" customize_show="True">
+        <xpath expr="//div[@id='mid-header-bottom-center']" position="inside">
+            <div class="col-md-12 col-sm-12 col-xs-12"
+                 id="header_my_cart">
+                <t t-call="website_sale.search"/>
+            </div>
+        </xpath>
+    </template>
+
+    <template name="Search hidden fields" id="website_sale.search">
+        <form action="/shop" method="get" t-att-class="search_class">
+            <t t-if="attrib_values">
+                <t t-foreach="attrib_values" t-as="a">
+                    <input type="hidden" name="attrib"
+                           t-att-value="'%s-%s' % (a[0],a[1])"/>
+                </t>
+            </t>
+            <t t-call="website.website_search_box"/>
+        </form>
+    </template>
+    <template id="website_search_box_inherit"
+              inherit_id="website.website_search_box"
+              name="Website Searchbox">
+        <xpath expr="//button" position="replace">
+            <button type="submit" class="btn btn-secondary oe_search_button">
+                <span>Search</span>
+            </button>
+        </xpath>
+    </template>
+
+
+    <!-- Header Layout Add to Cart Option -->
+    <template id="website_mid_header_add_to_cart" name="Mid Header My Cart">
+        <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+        <div t-att-class="'' if website_sale_order and website_sale_order.cart_quantity else ''">
+            <a href="/shop/cart" class="mid_header_shopping_cart"
+               data-toggle="tooltip" title="My Cart" id="header_mid_my_cart">
+                <i class="fa pe-7s-cart fa-500px fa_user_menu"/>
+                <sup t-attf-class="my_cart_quantity label label-primary"
+                     t-esc="website_sale_order and website_sale_order.cart_quantity or '0'"/>
+            </a>
+        </div>
+    </template>
+
+    <template id="web_theme_craig.phone_website_user_access_mid_header"
+              inherit_id="website_header_business_73lines.mid_header">
+        <xpath expr="//div[@id='phone-header']" position="replace">
+            <a href="#" id="my_wish">
+                <i class="fa fa-tags"/>
+                <span>Wants to explore Upcoming Deals on Weekends?</span>
+            </a>
+        </xpath>
+        <xpath expr="//div[@id='mid-header-top-right']" position="replace">
+            <div class="col-lg-4 col-sm-6" id="mid-header-top-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="dropdown">
+                                    <a href="#"
+                                       class="dropdown-toggle btn btn-link myaccount"
+                                       data-toggle="dropdown">
+                                        <span>My Account</span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu"
+                                        id="my_account">
+
+                                        <t t-if="website.user_id != user_id">
+                                            <div class="mx-2" id="user_name">
+                                                <b>
+                                                    <a t-attf-href="/my/home"
+                                                       role="menuitem"
+                                                       data-toggle="tooltip"
+                                                       title="My Account"
+                                                       class="my_acc">
+                                                        <span style="color:#333333;"
+                                                              t-esc="(len(user_id.name)&gt;20) and (user_id.name[:17]+'...') or user_id.name"/>
+                                                    </a>
+                                                </b>
+                                            </div>
+                                            <div class="mr15" id="user_logout">
+                                                <a classs="text-primary ml8"
+                                                   t-attf-href="/web/session/logout?redirect=/"
+                                                   role="menuitem"
+                                                   data-toggle="tooltip"
+                                                   title="Sign Out"
+                                                   style="color:#333333;margin-left:8px;margin-top:8px;">
+                                                    Sign Out
+                                                </a>
+                                            </div>
+                                        </t>
+                                        <t t-if="website.user_id == user_id">
+                                            <div class="list-inline-item"
+                                                 id="user_sign_in"
+                                                 groups="base.group_public">
+                                                <a href="/web/login"
+                                                   role="menuitem"
+                                                   class="text-black ml8">
+                                                    <span>Sign In</span>
+                                                </a>
+                                            </div>
+                                            <div class="list-inline-item mr-5"
+                                                 id="user_register">
+                                                <a href="/web/signup"
+                                                   role="menuitem"
+                                                   class="text-black ml8">
+                                                    <span>Register</span>
+                                                </a>
+                                            </div>
+                                        </t>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 pt8 pb8 col-sm-3" id="user_name">
+                                <a href="/shop/wishlist">Wishlist</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </xpath>
+    </template>
+
+    <template id="mid_header_inherit_craig"
+              inherit_id="website_header_business_73lines.mid_header"
+              name="Header Layout">
+        <xpath expr="//div[@id='mid-header-top-left']" position="attributes">
+            <attribute name="class">col-lg-4 col-sm-6 mt8 mb8</attribute>
+        </xpath>
+        <xpath expr="//div[@id='mid-header-top-center']" position="attributes">
+            <attribute name="class">col-lg-4 d-none d-lg-block d-xl-block mt8 mb8</attribute>
+        </xpath>
+        <xpath expr="//div[@id='mid-header-bottom-left']"
+               position="attributes">
+            <attribute name="class">col-lg-4 col-sm-3 mt8 mb8 text-center</attribute>
+        </xpath>
+        <xpath expr="//div[@id='mid-header-bottom-center']"
+               position="attributes">
+            <attribute name="class">col-lg-4 col-sm-5 mt8 mb8</attribute>
+        </xpath>
+        <xpath expr="//div[@id='mid-header-bottom-right']"
+               position="attributes">
+            <attribute name="class">col-lg-4 col-sm-4 mt8 mb8</attribute>
+        </xpath>
+    </template>
+
+</odoo>

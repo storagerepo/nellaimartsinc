@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template name="Banner With Image" id="s_banner_3_image">
+        <section class="s_banner_3_image">
+            <div class="container-fluid mb16">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <div id="myCarousel1492763670612" class="carousel slide s_carousel s_carousel_default"
+                             data-interval="10000" style="height: 416px;">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel1492763670612" data-slide-to="0" class=""/>
+                                <li data-target="#myCarousel1492763670612" data-slide-to="1" class="active"/>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item oe_img_bg"
+                                     style="background-image: url(&quot;/web_theme_craig_ecommerce/static/src/img/slider-01-930x420.jpg&quot;); min-height: 416px;">
+                                    <div class="container">
+                                        <div class="row">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item oe_img_bg active"
+                                     style="background-image: url(&quot;/web_theme_craig_ecommerce/static/src/img/slider-02-930x420.jpg&quot;); min-height: 416px;">
+                                    <div class="container">
+                                        <div class="row text-center">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-control-prev" data-target="#myCarousel1492763670612" data-slide="prev"
+                                 role="img" aria-label="Previous" title="Previous">
+                                <span class="carousel-control-prev-icon"/>
+                                <span class="sr-only o_default_snippet_text">
+                                    Previous
+                                </span>
+                            </div>
+                            <div class="carousel-control-next" data-target="#myCarousel1492763670612" data-slide="next"
+                                 role="img" aria-label="Next" title="Next">
+                                <span class="carousel-control-next-icon"/>
+                                <span class="sr-only o_default_snippet_text">Next
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="col-md-12 col-sm-6 col-xs-12 mb16 pad_right_0 pad_left_0">
+                                <div class="ttbannerblock layout2 style1">
+                                    <div class="ttbanner1 ttbanner ">
+                                        <div id="ttbanner-img" class="ttbanner-img">
+                                            <a>
+                                                <img src="/web_theme_craig_ecommerce/static/src/img/subbanner-2-7.jpg"
+                                                     class="img img-fluid"/>
+                                                <span class="hover hover1"/>
+                                                <span class="hover hover2"/>
+                                                <span class="hover hover3"/>
+                                                <span class="hover hover4"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6 col-xs-12 mt16 pad_right_0 pad_left_0">
+                                <div class="ttbannerblock layout2 style1">
+                                    <div class="ttbanner1 ttbanner ">
+                                        <div id="ttbanner-img" class="ttbanner-img">
+                                            <a>
+                                                <img src="/web_theme_craig_ecommerce/static/src/img/subbanner-3.jpg"
+                                                     class="img img-fluid"/>
+                                                <span class="hover hover1"/>
+                                                <span class="hover hover2"/>
+                                                <span class="hover hover3"/>
+                                                <span class="hover hover4"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

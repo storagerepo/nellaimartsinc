@@ -1,0 +1,76 @@
+#gallery, #about_us, #plans {
+  .s_title {
+    h1 {
+      color: #fff;
+    }
+
+    h3 {
+      color: $primary;
+    }
+  }
+
+  .bg-black-25 {
+    //background-color: $primary;
+    color: #FFF;
+  }
+}
+
+#about_us .parallax.s_parallax {
+  height: 200px;
+
+  div.icon-wrapper {
+    i {
+      color: $success;
+      position: relative;
+      left: 49%;
+    }
+
+    &:after {
+      content: '';
+      top: 25px;
+      margin-left: 10px;
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background-color: $success;
+      bottom: 0;
+      left: 51%;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      top: 25px;
+      background-color: $success;
+      bottom: 0;
+      left: 43%;
+    }
+  }
+}
+
+.brand_banner .has-line {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: $success;
+  left: calc(50% - 1px);
+  transform: translateX(-50%);
+}
+
+#s_testimonial_faq {
+  div.icon-wrapper:before {
+
+    background-color: transparent;
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about_us .parallax.s_parallax {
+    .has-line {
+      top: -20px;
+    }
+  }
+}

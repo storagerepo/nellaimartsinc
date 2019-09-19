@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="blog_list_template_inherite" inherit_id="snippet_blog_carousel_73lines.blog_list_template"
+              name="Blog item">
+        <xpath expr="//div[hasclass('item', 'blog-single')]" position="attributes">
+            <attribute name="style"></attribute>
+        </xpath>
+    </template>
+</odoo>

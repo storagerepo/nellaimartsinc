@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template name="About Best" id="s_we_best">
+        <section class="s_we_best bg-gray-darker" id="s_we_best"
+                 style="background-image: url('/web_theme_craig/static/src/img/about-bg01.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 my-4">
+                        <div class="slz-main-title text-center">
+                            <div class="icon-wrapper">
+                                <i class="slz-icon fa fa-pagelines fa-2x"/>
+                            </div>
+                            <h2 class="title o_default_snippet_text">WHY WE ARE THE BEST</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center my-3">
+                        <div class="slz-icon-block text-c">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-tree"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title o_default_snippet_text">Good Service</div>
+                                    <div class="description o_default_snippet_text">In the history of modern
+                                        astronomy, there is probably no one greater.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center my-3">
+                        <div class="slz-icon-block text-c">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-users"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title o_default_snippet_text">Creative Team</div>
+                                    <div class="description o_default_snippet_text">In the history of modern
+                                        astronomy, there is probably no one greater.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center my-3">
+                        <div class="slz-icon-block text-c">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-link"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title o_default_snippet_text">Full Project Support</div>
+                                    <div class="description o_default_snippet_text">In the history of modern
+                                        astronomy, there is probably no one greater.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center mb32 mt32">
+                        <div class="slz-icon-block text-c">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-rocket"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title o_default_snippet_text">Launch Project Fast</div>
+                                    <div class="description o_default_snippet_text">In the history of modern
+                                        astronomy, there is probably no one greater.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

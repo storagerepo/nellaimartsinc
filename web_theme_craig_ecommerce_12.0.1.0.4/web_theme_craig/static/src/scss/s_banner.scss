@@ -1,0 +1,40 @@
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel .carousel-control.right, .carousel .carousel-control.left {
+    display: none;
+  }
+}
+
+div.carousel-inner > div.item.bg-alpha.oe_img_bg.active > div > div > div > h1 {
+  color: $primary;
+}
+
+div.carousel.slide:hover {
+  .fa-chevron-right {
+    right: 50%;
+    opacity: 1;
+    left: 50% !important;
+    moz-transition: all .3s ease;
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: $info;
+      color: #fff !important;
+    }
+  }
+
+  .fa-chevron-left {
+    left: 25%;
+    opacity: 1;
+    moz-transition: all .3s ease;
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: $info;
+      color: #fff !important;
+    }
+  }
+}

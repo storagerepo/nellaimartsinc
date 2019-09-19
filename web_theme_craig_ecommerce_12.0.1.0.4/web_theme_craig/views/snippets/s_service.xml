@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="s_service" name="Service">
+        <section class="s_service bg-white" id="s_service">
+            <div class="container">
+                <div class="row">
+                    <div class="slz-main-title text-center">
+                        <div class="has-line mt8 mb16"/>
+                        <h2 class="title">OUR MAIN SERVICES</h2>
+                        <div class="description">Discovered the lens win the bifocal eye-glasses
+                            ,then recently they do the same thing in a bifocal contact lens.
+                            The lens is divided into two halves eye glasses.
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt16 mb16">
+                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                        <div class="slz-icon-block text-l">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-tree"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title">Flowers Decoration</div>
+                                    <div class="description">It is probably the dream of any amateur in an
+                                        astronomer to be able to be .
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                        <div class="slz-icon-block text-l">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-pagelines"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title">Waste Removal</div>
+                                    <div class="description">The first thing that comes to mind after do on
+                                        the surgery is whether to down the size.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                        <div class="slz-icon-block text-l">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-leaf"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title">Wedding Decoration</div>
+                                    <div class="description">Breast implant that you would like to do the
+                                        surgeon to place inside your chest.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                        <div class="slz-icon-block text-l">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-sun-o"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title">Lawn Maintenance</div>
+                                    <div class="description">In the life of any aspiring astronomer that it
+                                        is
+                                        time to buy that first telescope.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated ">
+                        <div class="slz-icon-block text-l">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-scissors"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title">Grass Cutting</div>
+                                    <div class="description">Of all of the celestial bodies that capture our
+                                        attention and fascination.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                        <div class="slz-icon-block text-l">
+                            <div class="icon-cell icon-background icon-circle">
+                                <div class="wrapper-icon">
+                                    <i class="slz-icon fa fa-building"/>
+                                </div>
+                            </div>
+                            <div class="content-cell">
+                                <div class="wrapper-info">
+                                    <div class="title ">Stone Walls</div>
+                                    <div class="description">There is a lot of exciting stuff going on in an
+                                        the stars above us that make it.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-icon-block direction-hover"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

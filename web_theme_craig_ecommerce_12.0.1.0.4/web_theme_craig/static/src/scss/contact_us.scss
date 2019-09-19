@@ -1,0 +1,70 @@
+.has-line {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: $success;
+  left: calc(50% - 2px);
+  transform: translateX(-50%);
+}
+
+.has-line {
+  &:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    left: 45px;
+    height: 2px;
+    width: 10px;
+    background-color: $success;
+    top: 0;
+
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 60px;
+    background-color: $success;
+    bottom: 0;
+  }
+}
+
+h1.small-title {
+  font-size: 18px;
+  color: $primary;
+}
+
+.address-description.description {
+  color: #333;
+  font-size: 14px;
+}
+
+.content .address-label, .content i {
+  color: $primary;
+}
+
+.address-text {
+  font-size: 13px;
+}
+
+.address-text span {
+  color: #333;
+}
+
+address i, address br {
+  display: none !important;
+}
+
+.control-label:after {
+  content: ' *';
+  color: $danger;
+}
+
+input:focus, .form-control:focus {
+  background-color: #FFF !important;
+  border-color: $primary;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px $primary;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px $primary;
+}

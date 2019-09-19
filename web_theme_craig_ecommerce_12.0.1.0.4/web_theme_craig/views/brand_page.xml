@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="craig_brand_page" model="ir.ui.view">
+        <field name="name">Craig Brand Page</field>
+        <field name="type">qweb</field>
+        <field name="key">website.craig-brand-page</field>
+        <field name="arch" type="xml">
+            <t name="Craig Brand Page" t-name="website.craig-brand-page">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure">
+                        <section class="service_banner s_text_block_image_fw oe_img_bg oe_custom_bg"
+                                 style="background-image: url(/web_theme_craig/static/src/img/promo_bg_1.jpg); background-position: 50% 100%">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 slz-main-title text-center">
+                                        <div class="has-line"/>
+                                        <h2 class="my-3 title">Brand</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="brand_page">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col my-3">
+                                        <img src="/web_theme_craig/static/src/img/partner_6.jpg"
+                                             class="img img-fluid"
+                                             alt=""/>
+                                    </div>
+                                    <div class="col my-3">
+                                        <img src="/web_theme_craig/static/src/img/partner_5.jpg"
+                                             class="img img-fluid"
+                                             alt=""/>
+                                    </div>
+                                    <div class="col my-3">
+                                        <img src="/web_theme_craig/static/src/img/partner_4.jpg"
+                                             class="img img-fluid"
+                                             alt=""/>
+                                    </div>
+                                    <div class="col my-3">
+                                        <img src="/web_theme_craig/static/src/img/partner_3.jpg"
+                                             class="img img-fluid"
+                                             alt=""/>
+                                    </div>
+                                    <div class="col my-3">
+                                        <img src="/web_theme_craig/static/src/img/partner_2.jpg"
+                                             class="img img-fluid"
+                                             alt=""/>
+                                    </div>
+                                    <div class="col my-3">
+                                        <img src="/web_theme_craig/static/src/img/partner_1.jpg"
+                                             class="img img-fluid"
+                                             alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="craig_brand_page_page" model="website.page">
+        <field name="url">/brand</field>
+        <field name="website_published">True</field>
+        <field name="view_id" ref="craig_brand_page"/>
+    </record>
+</odoo>

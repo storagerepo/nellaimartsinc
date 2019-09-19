@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="menu_lines_block" model="website.menu">
+        <field name="name">Pages</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">48</field>
+    </record>
+
+    <record id="menu_lines_features" model="website.menu">
+        <field name="name">Testimonial</field>
+        <field name="url">/testimonial</field>
+        <field name="parent_id" ref="web_theme_craig.menu_lines_block"/>
+        <field name="sequence" type="int">39</field>
+    </record>
+
+    <record id="menu_service" model="website.menu">
+        <field name="name">Service</field>
+        <field name="url">/service</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">35</field>
+    </record>
+
+    <record id="menu_about_us" model="website.menu">
+        <field name="name">About Us</field>
+        <field name="url">/aboutus</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">53</field>
+    </record>
+</odoo>

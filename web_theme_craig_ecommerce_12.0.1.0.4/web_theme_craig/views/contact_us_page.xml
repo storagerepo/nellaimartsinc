@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="website.contactus" name="Contact Us">
+        <t t-call="website.layout">
+            <div id="wrap ">
+                <div class="oe_structure"/>
+                <section class="service_banner s_text_block_image_fw oe_img_bg oe_custom_bg"
+                         style="background-image: url(/web_theme_craig/static/src/img/slider-1.jpg); background-position: 50% 100%">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 slz-main-title text-center">
+                                <div class="has-line"></div>
+                                <h2 class="my-3 title">Contact US</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container mt16 mb16">
+                    <div class="row p-5">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <t t-call="website.company_description"/>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-12 mb32">
+                            <div class="oe_structure">
+
+                            </div>
+                            <div class="text-center mt64" name="mail_button">
+                                <a t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary"
+                                   id="o_contact_mail">Send us an email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+    <template id="website.company_description">
+        <h1 class="my-2 small-title">
+            <span t-field="res_company.partner_id.name"/>
+        </h1>
+        <div class="address-description description mb8">
+            <span t-field="res_company.partner_id.website_description"/>
+        </div>
+        <div class="address-text first mb8">
+            <div class="content">
+                <i class="fa fa-map-marker"/>
+                <span class="address-label">Address:</span>
+            </div>
+            <span t-field="res_company.partner_id" t-options='{"widget": "contact","fields": ["address"]}'/>
+        </div>
+        <div class="address-text second mb8">
+            <div class="content">
+                <i class="fa fa-phone"/>
+                <span class="address-label">Phone numbers:</span>
+            </div>
+            <span t-field="res_company.partner_id"
+                  t-options='{"widget": "contact","fields": ["phone", "mobile"]}'/>
+        </div>
+        <div class="address-text second mb8">
+            <div class="content">
+                <i class="fa fa-fax"/>
+                <span class="address-label">Fax numbers:</span>
+            </div>
+            <span t-field="res_company.partner_id" t-options='{"widget": "contact","fields": ["fax"]}'/>
+        </div>
+        <div class="address-text third mb8">
+            <div class="content">
+                <i class="fa fa-envelope"/>
+                <span class="address-label">Email:</span>
+            </div>
+            <span t-field="res_company.partner_id" t-options='{"widget": "contact","fields": ["email"]}'/>
+        </div>
+    </template>
+</odoo>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="main_banner" name="Main Banner">
+
+        <section class="pt64 pb64">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-6  order-lg-0 mb8">
+                        <div class="d-md-block" id="all_cate_menu_home">
+                            <div class="bg_white">
+                                <div class="heading">
+                                    <span>Categories</span>
+                                </div>
+                                <t t-set="categories"
+                                   t-value="website.get_categories() if website else None"/>
+                                <t t-if="categories">
+                                    <t t-foreach="categories['categories']"
+                                       t-as="categ">
+                                        <t t-call="website_product_categ_menu_and_banner_73lines.menu_categories_recursive"/>
+                                    </t>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-9 order-first order-lg-last"
+                         id="page_block_for_side_block">
+                        <div class="s_banner_3_image d-lg-flex">
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 mb8">
+
+                                <div id="myCarousel1568799721723"
+                                     class="carousel s_banner slide s_carousel s_carousel_default"
+                                     data-interval="10000"
+                                     style="height: 416px;">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel1568799721723"
+                                            data-slide-to="0"
+                                            class="active"></li>
+                                        <li data-target="#myCarousel1568799721723"
+                                            data-slide-to="1" class=""></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item oe_img_bg image-fluid active"
+                                             style="background-image: url(&quot;/web_theme_craig_ecommerce/static/src/img/slider-01-930x420.jpg&quot;); height: 100%; min-height: 416px;">
+                                            <div class="container">
+                                                <div class="row">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item oe_img_bg image-fluid "
+                                             style="background-image: url(&quot;/web_theme_craig_ecommerce/static/src/img/slider-02-930x420.jpg&quot;);height: 100%;min-height: 416px;">
+                                            <div class="container">
+                                                <div class="row text-center">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-control-prev"
+                                         data-target="#myCarousel1568799721723"
+                                         data-slide="prev" role="img"
+                                         aria-label="Previous"
+                                         title="Previous">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="sr-only o_default_snippet_text">
+                                            Previous
+                                        </span>
+                                    </div>
+                                    <div class="carousel-control-next"
+                                         data-target="#myCarousel1568799721723"
+                                         data-slide="next" role="img"
+                                         aria-label="Next" title="Next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="sr-only o_default_snippet_text">
+                                            Next
+                                        </span>
+                                    </div>
+                                </div>
+                                <!--                                <div id="myCarousel1492763670612"-->
+                                <!--                                     class="carousel slide s_carousel s_carousel_default s_banner"-->
+                                <!--                                     data-interval="10000"-->
+                                <!--                                     style="height: 416px;">-->
+                                <!--                                    <ol class="carousel-indicators">-->
+                                <!--                                        <li data-target="#myCarousel1492763670612"-->
+                                <!--                                            data-slide-to="0"-->
+                                <!--                                            class="active"/>-->
+                                <!--                                        <li data-target="#myCarousel1492763670612"-->
+                                <!--                                            data-slide-to="1"/>-->
+                                <!--                                    </ol>-->
+                                <!--                                    <div class="carousel-inner">-->
+                                <!--                                        <div class="carousel-item active oe_img_bg"-->
+                                <!--                                             style="background-image: url(&quot;/web_theme_craig_ecommerce/static/src/img/slider-01-930x420.jpg&quot;);">-->
+                                <!--                                            <div class="container">-->
+                                <!--                                                <div class="row">-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                        <div class="carousel-item oe_img_bg"-->
+                                <!--                                             style="background-image: url(&quot;/web_theme_craig_ecommerce/static/src/img/slider-02-930x420.jpg&quot;);">-->
+                                <!--                                            <div class="container">-->
+                                <!--                                                <div class="row text-center">-->
+
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                    <div class="carousel-control-prev"-->
+                                <!--                                         data-target="#myCarousel1492763670612"-->
+                                <!--                                         data-slide="prev"-->
+                                <!--                                         role="img"-->
+                                <!--                                         aria-label="Previous"-->
+                                <!--                                         title="Previous">-->
+                                <!--                                        <span class="carousel-control-prev-icon"/>-->
+                                <!--                                        <span class="sr-only o_default_snippet_text">-->
+                                <!--                                            Previous-->
+                                <!--                                        </span>-->
+                                <!--                                    </div>-->
+                                <!--                                    <div class="carousel-control-next"-->
+                                <!--                                         data-target="#myCarousel1492763670612"-->
+                                <!--                                         data-slide="next"-->
+                                <!--                                         role="img" aria-label="Next"-->
+                                <!--                                         title="Next">-->
+                                <!--                                        <span class="carousel-control-next-icon"/>-->
+                                <!--                                        <span class="sr-only o_default_snippet_text">-->
+                                <!--                                            Next-->
+                                <!--                                        </span>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <div class="row m-auto">
+                                    <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12 mb16 pad_right_0 pad_left_0">
+                                        <div class="ttbannerblock layout2 style1">
+                                            <div class="ttbanner1 ttbanner ">
+                                                <div id="ttbanner-img"
+                                                     class="ttbanner-img">
+                                                    <a>
+                                                        <img src="/web_theme_craig_ecommerce/static/src/img/subbanner-2-7.jpg"
+                                                             class="img img-fluid"/>
+                                                        <span class="hover hover1"/>
+                                                        <span class="hover hover2"/>
+                                                        <span class="hover hover3"/>
+                                                        <span class="hover hover4"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12   pad_right_0 pad_left_0">
+                                        <div class="ttbannerblock layout2 style1">
+                                            <div class="ttbanner1 ttbanner ">
+                                                <div id="ttbanner-img"
+                                                     class="ttbanner-img">
+                                                    <a>
+                                                        <img src="/web_theme_craig_ecommerce/static/src/img/subbanner-3.jpg"
+                                                             class="img img-fluid"/>
+                                                        <span class="hover hover1"/>
+                                                        <span class="hover hover2"/>
+                                                        <span class="hover hover3"/>
+                                                        <span class="hover hover4"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section
+                                class="s_product_category_carousel  mb32 js_get_objects headline_hidden"
+                                data-loading="true"
+                                data-template="snippet_product_category_carousel_73lines.product_category_list_template_header"
+                                data-object_name="product.public.category"
+                                data-objects_limit="15"
+                                data-objects_in_slide="5"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--                <section class="mt16">-->
+        <!--                    <div class="container">-->
+        <!--                        <div class="row">-->
+        <!--                            <div id="left_side_block"-->
+        <!--                                 class="col-lg-3 col-md-12 order-1">-->
+        <!--                                <section class="d-md-block" id="all_cate_menu_home">-->
+        <!--                                    <div class="container">-->
+        <!--                                        <div class="row">-->
+        <!--                                            <div class="col-md-12 col-sm-12 bg_white">-->
+        <!--                                                <div class="heading">-->
+        <!--                                                    <span>Categories</span>-->
+        <!--                                                </div>-->
+        <!--                                                <t t-set="categories"-->
+        <!--                                                   t-value="website.get_categories() if website else None"/>-->
+        <!--                                                <t t-if="categories">-->
+        <!--                                                    <t t-foreach="categories['categories']"-->
+        <!--                                                       t-as="categ">-->
+        <!--                                                        <t t-call="website_product_categ_menu_and_banner_73lines.menu_categories_recursive"/>-->
+        <!--                                                    </t>-->
+        <!--                                                </t>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </section>-->
+        <!--                            </div>-->
+        <!--                            <div id="page_block_for_side_block"-->
+        <!--                                 class="col-lg-9 col-md-12 order-2">-->
+        <!--                                <section class="s_banner_3_image">-->
+        <!--                                    <div class="container mb16">-->
+        <!--                                        <div class="row">-->
+        <!--                                            <div class="col-md-8 col-sm-12 col-xs-12">-->
+        <!--                                                <div id="myCarousel1492763670612"-->
+        <!--                                                     class="carousel slide s_carousel s_carousel_default"-->
+        <!--                                                     data-interval="10000"-->
+        <!--                                                     style="height: 416px;">-->
+        <!--                                                    <ol class="carousel-indicators">-->
+        <!--                                                        <li data-target="#myCarousel1492763670612"-->
+        <!--                                                            data-slide-to="0"-->
+        <!--                                                            class="active"/>-->
+        <!--                                                        <li data-target="#myCarousel1492763670612"-->
+        <!--                                                            data-slide-to="1"/>-->
+        <!--                                                    </ol>-->
+        <!--                                                    <div class="carousel-inner">-->
+        <!--                                                        <div class="carousel-item active oe_img_bg"-->
+        <!--                                                             style="background-image: url(&quot;/web_theme_craig_ecommerce/static/src/img/slider-01-930x420.jpg&quot;);">-->
+        <!--                                                            <div class="container">-->
+        <!--                                                                <div class="row">-->
+        <!--                                                                </div>-->
+        <!--                                                            </div>-->
+        <!--                                                        </div>-->
+        <!--                                                        <div class="carousel-item oe_img_bg"-->
+        <!--                                                             style="background-image: url(&quot;/web_theme_craig_ecommerce/static/src/img/slider-02-930x420.jpg&quot;);">-->
+        <!--                                                            <div class="container">-->
+        <!--                                                                <div class="row text-center">-->
+
+        <!--                                                                </div>-->
+        <!--                                                            </div>-->
+        <!--                                                        </div>-->
+        <!--                                                    </div>-->
+        <!--                                                    <div class="carousel-control-prev"-->
+        <!--                                                         data-target="#myCarousel1492763670612"-->
+        <!--                                                         data-slide="prev"-->
+        <!--                                                         role="img"-->
+        <!--                                                         aria-label="Previous"-->
+        <!--                                                         title="Previous">-->
+        <!--                                                        <span class="carousel-control-prev-icon"/>-->
+        <!--                                                        <span class="sr-only o_default_snippet_text">-->
+        <!--                                                            Previous-->
+        <!--                                                        </span>-->
+        <!--                                                    </div>-->
+        <!--                                                    <div class="carousel-control-next"-->
+        <!--                                                         data-target="#myCarousel1492763670612"-->
+        <!--                                                         data-slide="next"-->
+        <!--                                                         role="img" aria-label="Next"-->
+        <!--                                                         title="Next">-->
+        <!--                                                        <span class="carousel-control-next-icon"/>-->
+        <!--                                                        <span class="sr-only o_default_snippet_text">-->
+        <!--                                                            Next-->
+        <!--                                                        </span>-->
+        <!--                                                    </div>-->
+        <!--                                                </div>-->
+
+        <!--                                            </div>-->
+        <!--                                            <div class="col-md-4 col-sm-12 col-xs-12">-->
+        <!--                                                <div class="col-md-12 col-sm-6 col-xs-12 mb16 pad_right_0 pad_left_0">-->
+        <!--                                                    <div class="ttbannerblock layout2 style1">-->
+        <!--                                                        <div class="ttbanner1 ttbanner ">-->
+        <!--                                                            <div id="ttbanner-img"-->
+        <!--                                                                 class="ttbanner-img">-->
+        <!--                                                                <a>-->
+        <!--                                                                    <img src="/web_theme_craig_ecommerce/static/src/img/subbanner-2-7.jpg"-->
+        <!--                                                                         class="img img-fluid"/>-->
+        <!--                                                                    <span class="hover hover1"/>-->
+        <!--                                                                    <span class="hover hover2"/>-->
+        <!--                                                                    <span class="hover hover3"/>-->
+        <!--                                                                    <span class="hover hover4"/>-->
+        <!--                                                                </a>-->
+        <!--                                                            </div>-->
+        <!--                                                        </div>-->
+        <!--                                                    </div>-->
+        <!--                                                </div>-->
+        <!--                                                <div class="col-md-12 col-sm-6 col-xs-12 mt16 pad_right_0 pad_left_0">-->
+        <!--                                                    <div class="ttbannerblock layout2 style1">-->
+        <!--                                                        <div class="ttbanner1 ttbanner ">-->
+        <!--                                                            <div id="ttbanner-img"-->
+        <!--                                                                 class="ttbanner-img">-->
+        <!--                                                                <a>-->
+        <!--                                                                    <img src="/web_theme_craig_ecommerce/static/src/img/subbanner-3.jpg"-->
+        <!--                                                                         class="img img-fluid"/>-->
+        <!--                                                                    <span class="hover hover1"/>-->
+        <!--                                                                    <span class="hover hover2"/>-->
+        <!--                                                                    <span class="hover hover3"/>-->
+        <!--                                                                    <span class="hover hover4"/>-->
+        <!--                                                                </a>-->
+        <!--                                                            </div>-->
+        <!--                                                        </div>-->
+        <!--                                                    </div>-->
+        <!--                                                </div>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </section>-->
+        <!--                                <section-->
+        <!--                                        class="s_product_category_carousel  mb32 js_get_objects headline_hidden"-->
+        <!--                                        data-loading="true"-->
+        <!--                                        data-template="snippet_product_category_carousel_73lines.product_category_list_template_header"-->
+        <!--                                        data-object_name="product.public.category"-->
+        <!--                                        data-objects_limit="15"-->
+        <!--                                        data-objects_in_slide="5"/>-->
+
+        <!--                            </div>-->
+        <!--                        </div>-->
+
+        <!--                    </div>-->
+        <!--                </section>-->
+    </template>
+</odoo>

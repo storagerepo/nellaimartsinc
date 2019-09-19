@@ -1,0 +1,139 @@
+/********* mid header**************/
+#mid-header-bottom {
+  background: #fff;
+  line-height: 1.6
+
+}
+
+#wrapwrap > header > div.navbar.navbar-default.navbar-static-top.yamm {
+  border-bottom: 1px solid $success;
+  border-top: 1px solid $success;
+
+}
+
+#mid-header-bottom-right div.col-md-2.text-right > i {
+  border: 1px solid;
+  border-radius: 50%;
+}
+.mr15{
+  margin-right: 15%;
+}
+#top_menu > li.nav-item a[href='/web/login'],
+#top_menu > li.nav-item.dropdown{
+  display: none;
+}
+#user_logout > a > span {
+  font-size: 13px;
+}
+
+#mid-header-top {
+  .js_change_lang {
+    color: $info;
+  }
+
+  #user_register > div > a {
+    font-size: 13px;
+  }
+
+  background-color: $success !important;
+  //height : 40px;
+  font-size: 13px;
+
+  a {
+    color: #FFF;
+
+    i {
+      color: #FFF;
+    }
+  }
+
+  #mid-header-top-right {
+    .dropdown-menu {
+      z-index: 1001;
+    }
+
+    .dropdown {
+      .myaccount {
+        text-decoration: none;
+
+        span::after {
+          content: "\f107";
+          font-family: fontawesome;
+          font-size: 13px;
+          margin: 0 0 0 3px;
+        }
+      }
+
+      ul {
+        a {
+          color: $primary;
+
+          &:hover {
+            color: #FFF;
+          }
+
+        }
+
+      }
+    }
+
+    .dropdown.open {
+      .myaccount {
+        text-decoration: none;
+
+        span::after {
+          content: "\f106" !important;
+          font-size: 13px;
+          font-family: fontawesome;
+          margin: 0 0 0 3px;
+        }
+      }
+    }
+
+    ul {
+      a {
+        color: $primary;
+
+        &:hover {
+          color: #FFF;
+        }
+      }
+
+    }
+  }
+}
+
+.navbar {
+  border: 0px;
+}
+
+.navbar-default {
+  .navbar-nav {
+    .active {
+      a {
+        color: $success !important;
+        background-color: #FFF !important;
+      }
+    }
+  }
+
+}
+
+#top_menu li.dropdown.open a {
+  color: $info !important;
+
+  &:hover {
+    color: $success !important;
+  }
+}
+
+.pricelist_lst .dropdown-menu > li > a:hover {
+  color: $success !important;
+  background: transparent !important;
+}
+
+@media (max-width: 767px) {
+  #mid-header-bottom .logo img {
+    margin: auto;
+  }
+}

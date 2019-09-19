@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="tab_carousel_banner_side_banner"
+              name="Tab Carousel And Side Banner">
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="left_side_block"
+                         class="col-lg-3 col-md-12 order-1">
+                        <section class="s_one_promo_banner">
+                            <div class="container bg-white">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 mt16 mb16">
+                                        <div class="oe_structure">
+                                            <div class="ttbannerblock layout2 style1">
+                                                <div class="ttbanner1 ttbanner">
+                                                    <div id="ttbanner-img"
+                                                         class="ttbanner-img">
+                                                        <a>
+                                                            <img src="/web_theme_craig_ecommerce/static/src/img/left-banner-1-231x460.jpg"
+                                                                 class="mx-auto img img-fluid"/>
+                                                            <span class="hover1 hover"/>
+                                                            <span class="hover2 hover"/>
+                                                            <span class="hover3 hover"/>
+                                                            <span class="hover4 hover"/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="s_service">
+                            <div class="container bg_white">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="oe_structure">
+                                            <div id="ttcmsleftservices">
+                                                <h2 class="title_block o_default_snippet_text">
+                                                    Our Servies
+                                                </h2>
+                                                <div class="block_content craig_side">
+                                                    <div class="ttshipping">
+                                                        <div class="ttcontent_inner col-md-12">
+                                                            <div class="service">
+                                                                <div class="ttshipping_img service-icon"/>
+                                                                <div class="service-content">
+                                                                    <div class="service-title o_default_snippet_text">
+                                                                        Free
+                                                                        Shipping
+                                                                    </div>
+                                                                    <div class="o_default_snippet_text">
+                                                                        Deliver
+                                                                        to Door
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ttsupport">
+                                                        <div class="ttcontent_inner col-md-12">
+                                                            <div class="service">
+                                                                <div class="ttsupport_img service-icon"/>
+                                                                <div class="service-content">
+                                                                    <div class="service-title o_default_snippet_text">
+                                                                        24x7
+                                                                        Support
+                                                                    </div>
+                                                                    <div class="o_default_snippet_text">
+                                                                        in safe
+                                                                        hands
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ttmoneyback">
+                                                        <div class="ttcontent_inner col-md-12">
+                                                            <div class="service">
+                                                                <div class="ttmoneyback_img service-icon"/>
+                                                                <div class="service-content">
+                                                                    <div class="service-title o_default_snippet_text">
+                                                                        Money
+                                                                        Back
+                                                                    </div>
+                                                                    <div class="o_default_snippet_text">
+                                                                        Easy to
+                                                                        return
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ttshopping">
+                                                        <div class="ttcontent_inner col-md-12">
+                                                            <div class="service">
+                                                                <div class="ttshopping_img service-icon"/>
+                                                                <div class="service-content">
+                                                                    <div class="service-title o_default_snippet_text">
+                                                                        Online
+                                                                        Store
+                                                                    </div>
+                                                                    <div class="o_default_snippet_text">
+                                                                        a huge
+                                                                        branding
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div id="page_block_for_side_block"
+                         class="col-lg-9 col-md-12 order-2">
+                        <section id="tab_carousel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active"
+                                                   data-toggle="tab"
+                                                   href="#menu0">Recent
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   data-toggle="tab"
+                                                   href="#menu1">
+                                                    Featured
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   data-toggle="tab"
+                                                   href="#menu2">
+                                                    Top
+                                                    Rated
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   data-toggle="tab"
+                                                   href="#menu3">
+                                                    Sale
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   data-toggle="tab"
+                                                   href="#menu4">
+                                                    Best
+                                                    Selling
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane container active"
+                                                 id="menu0">
+                                                <section
+                                                        class="s_product_carousel mb8 js_get_objects product_carousel headline_hidden"
+                                                        data-loading="true"
+                                                        data-template="snippet_product_carousel_73lines.product_list_template"
+                                                        data-object_name="product.template"
+                                                        data-objects_limit="10"
+                                                        data-objects_in_slide="4"
+                                                        data-objects_in_row="2"/>
+                                            </div>
+                                            <div class="tab-pane container fade"
+                                                 id="menu1">
+                                                <section
+                                                        class="s_product_carousel mb8 js_get_objects product_carousel headline_hidden"
+                                                        data-loading="true"
+                                                        data-template="snippet_product_carousel_73lines.product_list_template"
+                                                        data-object_name="product.template"
+                                                        data-objects_limit="10"
+                                                        data-objects_in_slide="4"
+                                                        data-objects_in_row="2"/>
+                                            </div>
+                                            <div class="tab-pane container fade"
+                                                 id="menu2">
+                                                <section
+                                                        class="s_product_carousel mb8 js_get_objects product_carousel headline_hidden"
+                                                        data-loading="true"
+                                                        data-template="snippet_product_carousel_73lines.product_list_template"
+                                                        data-object_name="product.template"
+                                                        data-objects_limit="10"
+                                                        data-objects_in_slide="4"
+                                                        data-objects_in_row="2"/>
+                                            </div>
+                                            <div class="tab-pane container fade"
+                                                 id="menu3">
+                                                <section
+                                                        class="s_product_carousel mb8 js_get_objects product_carousel headline_hidden"
+                                                        data-loading="true"
+                                                        data-template="snippet_product_carousel_73lines.product_list_template"
+                                                        data-object_name="product.template"
+                                                        data-objects_limit="10"
+                                                        data-objects_in_slide="4"
+                                                        data-objects_in_row="2"/>
+                                            </div>
+                                            <div class="tab-pane container fade"
+                                                 id="menu4">
+                                                <section
+                                                        class="s_product_carousel mb8 js_get_objects product_carousel headline_hidden"
+                                                        data-loading="true"
+                                                        data-template="snippet_product_carousel_73lines.product_list_template"
+                                                        data-object_name="product.template"
+                                                        data-objects_limit="10"
+                                                        data-objects_in_slide="4"
+                                                        data-objects_in_row="2"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_one_promo_banner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 mt16 mb16">
+                                        <div class="oe_structure">
+                                            <div class="ttbannerblock layout2 style1">
+                                                <div class="ttbanner1 ttbanner">
+                                                    <div id="ttbanner-img"
+                                                         class="ttbanner-img">
+                                                        <a>
+                                                            <img src="/web_theme_craig_ecommerce/static/src/img/bottombanner-1.jpg"
+                                                                 class="img img-fluid"/>
+                                                            <span class="hover1 hover"/>
+                                                            <span class="hover2 hover"/>
+                                                            <span class="hover3 hover"/>
+                                                            <span class="hover4 hover"/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </template>
+</odoo>

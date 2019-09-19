@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template
+            id="website_product_categ_menu_and_banner_73lines.website_category_menu"
+            inherit_id="website.layout" customize_show="False" active="False"
+            name="Show Category Menu">
+    </template>
+
+    <!--<template id="product_carousel_inherit"-->
+              <!--inherit_id="snippet_product_carousel_73lines.new_products_item">-->
+        <!--<xpath expr="//div[hasclass('text-left', 'easy-shortcuts-user-rating')]"-->
+               <!--position="replace">-->
+        <!--</xpath>-->
+        <!--<xpath-->
+                <!--expr="//form/div/section/div[hasclass('product_price', 'easy-shortcuts-price')]"-->
+                <!--position="before">-->
+            <!--<div class="easy-shortcuts-user-rating">-->
+                <!--<t t-name="website_rating.rating_stars_static">-->
+                    <!--<t t-set="val_integer"-->
+                       <!--t-value="round(product.rating_get_stats()['avg'])"/>-->
+                    <!--<t t-set="val_decimal" t-value="0"/>-->
+                    <!--<t t-set="empty_star"-->
+                       <!--t-value="5 - val_integer"/>-->
+                    <!--<div class="o_website_rating_static">-->
+                        <!--<t t-foreach="range(0,val_integer)"-->
+                           <!--t-as="num">-->
+                            <!--<i class="fa fa-star"/>-->
+                        <!--</t>-->
+                        <!--<t t-if="val_decimal">-->
+                            <!--<i class="fa fa-star-half-o"/>-->
+                        <!--</t>-->
+                        <!--<t t-foreach="range(0,empty_star)" t-as="num">-->
+                            <!--<i class="fa fa-star-o"/>-->
+                        <!--</t>-->
+                    <!--</div>-->
+                <!--</t>-->
+            <!--</div>-->
+        <!--</xpath>-->
+    <!--</template>-->
+
+    <!-- Inherit product carousel template and added WishList options -->
+    <template
+            id="snippet_product_carousel_73lines.new_products_item_inherit"
+            inherit_id="snippet_product_carousel_73lines.new_products_item"
+            name="Product Carousel WishList">
+        <xpath expr="//div[hasclass('product_price', 'easy-shortcuts-price')]"
+               position="inside">
+            <t t-set="in_wish"
+               t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>
+            <span class="wishlist-btn">
+            <a class="btn btn-xs o_add_wishlist easy-shortcuts-wishlist"
+               t-att-disabled='in_wish or None' title="Add to Wishlist"
+               t-att-data-product-product-id="product.product_variant_id.id"
+               data-action="o_wishlist">
+                <span class="fa fa-heart"/>
+            </a>
+            </span>
+        </xpath>
+    </template>
+
+    <template id="new_products_add_to_cart_inherit"
+              inherit_id="snippet_product_carousel_73lines.new_products_add_to_cart">
+        <xpath
+                expr="//t[@t-if='len(product.product_variant_ids) == 1']//button"
+                position="replace">
+            <div class="operation-btn">
+                <button id="add_to_cart" type="submit"
+                        class="btn-link btn add-cart-btn-set easy-shortcuts-add-to-cart"
+                        formaction="/shop/cart/update_continue"
+                        data-toggle="tooltip"
+                        title="Add to Cart">
+                    <span class="fa pe-7s-cart fa-500px"/>
+                </button>
+            </div>
+        </xpath>
+        <xpath expr="//t[@t-if='len(product.product_variant_ids) &gt; 1']//a"
+               position="replace">
+            <div class="operation-btn">
+                <a class="easy-shortcuts-add-to-cart btn add-cart-a-set"
+                   t-att-href="'/shop/product/%s' % slug(product)">
+                    <span class="fa pe-7s-cart fa-500px"/>
+                </a>
+            </div>
+        </xpath>
+
+    </template>
+</odoo>

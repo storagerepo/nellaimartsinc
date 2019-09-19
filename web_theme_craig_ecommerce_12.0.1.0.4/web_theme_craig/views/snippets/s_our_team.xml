@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="s_our_team" name="Our Team">
+        <section class="s_our_team bg-white" id="s_our_team">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12 my-4 slz-main-title">
+                        <div class="icon-wrapper">
+                            <i class="slz-icon fa fa-pagelines fa-2x"/>
+                        </div>
+                        <h2 class="title o_default_snippet_text my-2">MEET OUR GARDENER</h2>
+                        <div class="subtitle">
+                            <span class="subtitle-inner o_default_snippet_text">Team Member</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6 col-xs-12 my-3">
+                        <div class="team">
+                            <div class="team_image">
+                                <img class="img img-fluid"
+                                     src="/web_theme_craig/static/src/img/team.jpg"/>
+                            </div>
+                            <div class="team-content">
+                                <div class="content-wrapper">
+                                    <a href="#" class="title name o_default_snippet_text" tabindex="0">
+                                        David Benjamin
+                                    </a>
+                                    <div class="position o_default_snippet_text">Senior Gardener
+                                    </div>
+                                    <div class="social-list">
+                                        <a href="#" class="social-item facebook" tabindex="0">
+                                            <i class="slz-icons fa fa-facebook"/>
+                                            <span class="text o_default_snippet_text">Facebook
+                                            </span>
+                                        </a>
+                                        <a href="#" class="social-item twitter" tabindex="0">
+                                            <i class="slz-icons fa fa-twitter"/>
+                                            <span class="text o_default_snippet_text">Twitter</span>
+                                        </a>
+                                        <a href="#" class="social-item google-plus" tabindex="0">
+                                            <i class="slz-icons fa fa-google-plus"/>
+                                            <span class="text o_default_snippet_text">Google+</span>
+                                        </a>
+                                        <a href="#" class="social-item pinterest" tabindex="0">
+                                            <i class="slz-icons fa fa-pinterest"/>
+                                            <span class="text o_default_snippet_text">Pinterest
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 my-3">
+                        <div class="team">
+                            <div class="team_image">
+                                <img class="img img-fluid"
+                                     src="/web_theme_craig/static/src/img/team05.jpg"/>
+                            </div>
+                            <div class="team-content">
+                                <div class="content-wrapper">
+                                    <a href="#" class="title name o_default_snippet_text" tabindex="0">
+                                        Mary Sulvian
+                                    </a>
+                                    <div class="position o_default_snippet_text">Senior Gardener
+                                    </div>
+                                    <div class="social-list">
+                                        <a href="#" class="social-item facebook" tabindex="0">
+                                            <i class="slz-icons fa fa-facebook"/>
+                                            <span class="text o_default_snippet_text">Facebook
+                                            </span>
+                                        </a>
+                                        <a href="#" class="social-item twitter" tabindex="0">
+                                            <i class="slz-icons fa fa-twitter"/>
+                                            <span class="text o_default_snippet_text">Twitter</span>
+                                        </a>
+                                        <a href="#" class="social-item google-plus" tabindex="0">
+                                            <i class="slz-icons fa fa-google-plus"/>
+                                            <span class="text o_default_snippet_text">Google+</span>
+                                        </a>
+                                        <a href="#" class="social-item pinterest" tabindex="0">
+                                            <i class="slz-icons fa fa-pinterest"/>
+                                            <span class="text o_default_snippet_text">Pinterest
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 my-3">
+                        <div class="team">
+                            <div class="team_image">
+                                <img class="img img-fluid"
+                                     src="/web_theme_craig/static/src/img/team04.jpg"/>
+                            </div>
+                            <div class="team-content">
+                                <div class="content-wrapper">
+                                    <a href="#" class="title name o_default_snippet_text" tabindex="0">
+                                        John Mathew
+                                    </a>
+                                    <div class="position o_default_snippet_text">Senior Gardener
+                                    </div>
+                                    <div class="social-list">
+                                        <a href="#" class="social-item facebook" tabindex="0">
+                                            <i class="slz-icons fa fa-facebook"/>
+                                            <span class="text o_default_snippet_text">Facebook
+                                            </span>
+                                        </a>
+                                        <a href="#" class="social-item twitter" tabindex="0">
+                                            <i class="slz-icons fa fa-twitter"/>
+                                            <span class="text o_default_snippet_text">Twitter</span>
+                                        </a>
+                                        <a href="#" class="social-item google-plus" tabindex="0">
+                                            <i class="slz-icons fa fa-google-plus"/>
+                                            <span class="text o_default_snippet_text">Google+</span>
+                                        </a>
+                                        <a href="#" class="social-item pinterest" tabindex="0">
+                                            <i class="slz-icons fa fa-pinterest"/>
+                                            <span class="text o_default_snippet_text">Pinterest
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 my-3">
+                        <div class="team">
+                            <div class="team_image">
+                                <img class="img img-fluid"
+                                     src="/web_theme_craig/static/src/img/team02.jpg"/>
+                            </div>
+                            <div class="team-content">
+                                <div class="content-wrapper">
+                                    <a href="#" class="title name o_default_snippet_text" tabindex="0">
+                                        Laura Keith
+                                    </a>
+                                    <div class="position o_default_snippet_text">Senior Gardener
+                                    </div>
+                                    <div class="social-list">
+                                        <a href="#" class="social-item facebook" tabindex="0">
+                                            <i class="slz-icons fa fa-facebook"/>
+                                            <span class="text o_default_snippet_text">Facebook
+                                            </span>
+                                        </a>
+                                        <a href="#" class="social-item twitter" tabindex="0">
+                                            <i class="slz-icons fa fa-twitter"/>
+                                            <span class="text o_default_snippet_text">Twitter</span>
+                                        </a>
+                                        <a href="#" class="social-item google-plus" tabindex="0">
+                                            <i class="slz-icons fa fa-google-plus"/>
+                                            <span class="text o_default_snippet_text">Google+</span>
+                                        </a>
+                                        <a href="#" class="social-item pinterest" tabindex="0">
+                                            <i class="slz-icons fa fa-pinterest"/>
+                                            <span class="text o_default_snippet_text">Pinterest
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

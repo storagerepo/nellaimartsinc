@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template
+            id="website_header_business_73lines.website_logo_show_mid_header"
+            inherit_id="website_header_business_73lines.mid_header"
+            customize_show="False" active="False" name="Show Logo">
+    </template>
+
+    <template id="frontend_layout_inherit" inherit_id="portal.frontend_layout">
+        <xpath expr="//ul[@id='top_menu']" position="attributes">
+            <attribute name="class">nav navbar-nav mr-auto text-right</attribute>
+        </xpath>
+    </template>
+    <!--Company Info -->
+
+    <template id="company_details_mid_header" inherit_id="website_header_business_73lines.mid_header"
+              name='Company Info'>
+        <xpath expr="//div[@id='mid-header-bottom-right']" position="inside">
+            <i class="bg-primary fa fa-1x fa-phone padding-medium rounded-circle"/>
+            <div class="ml-3">
+                <span>Call Center</span>
+                <br/>
+                <span t-field="res_company.phone"/>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="web_theme_craig_show_logo"
+              inherit_id="website_header_business_73lines.mid_header"
+              customize_show="True" active="True" name="Show Logo">
+        <xpath expr="//div[@id='mid-header-bottom-left']" position="inside">
+            <a href="/" class="logo my-3 col-sm-12">
+                <img class="img img-fluid" src="/logo.png"
+                     t-att-alt="'Logo of %s' % res_company.name"
+                     t-att-title="res_company.name"/>
+            </a>
+        </xpath>
+    </template>
+
+    <!--User Login -->
+    <template id="phone_website_user_access_mid_header" inherit_id="website_header_business_73lines.mid_header">
+        <xpath expr="//div[@id='phone-header']" position="replace">
+            <a href="#" id="my_wish">
+                <i class="fa fa-tags"/>
+                <span>Wants to explore Upcoming Deals on Weekends?</span>
+            </a>
+        </xpath>
+        <xpath expr="//div[@id='mid-header-top-right']" position="inside">
+            <div class="mx-2" id="user_name">
+                <a href="/shop/wishlist">Wishlist</a>
+            </div>
+            <t t-if="website.user_id != user_id">
+                <div class="mx-2" id="user_name">
+                    <b>
+                        <a t-attf-href="/my/home" role="menuitem"
+                           data-toggle="tooltip" title="My Account"
+                           class="my_acc">
+                            <span t-esc="(len(user_id.name)&gt;20) and (user_id.name[:17]+'...') or user_id.name"/>
+                        </a>
+                    </b>
+                </div>
+                <div class="mr15" id="user_logout">
+                    <a t-attf-href="/web/session/logout?redirect=/"
+                       role="menuitem" data-toggle="tooltip" title="Sign Out">
+                        <span class="fa fa-sign-out fa_user_menu"/>
+                    </a>
+                </div>
+            </t>
+            <t t-if="website.user_id == user_id">
+                <div class="list-inline-item" id="user_sign_in" groups="base.group_public">
+                    <a href="/web/login" role="menuitem">
+                        <span>Sign In</span>
+                    </a>
+                </div>
+                <div class="list-inline-item mr-5" id="user_register">
+                    <a href="/web/signup" role="menuitem">
+                        <span>Register</span>
+                    </a>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="website.footer_custom" inherit_id="website.layout" name="Footer">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div class="oe_structure" id="footer">
+                    <section class="s_navbar_menu_mega">
+                        <div class="container">
+                            <div class="row footer-top-col-4 footer-1 mb32">
+                                <div class="sidebar col-md-3 col-sm-6">
+                                    <h4 class="widget-title">
+                                        <span>About Store</span>
+                                    </h4>
+                                    <div class="sub-description">Claritas
+                                        processus dynamicus sequitu
+                                        consut,
+                                        consut ryethm
+                                        sirter
+                                        smreted oeureots.
+                                    </div>
+                                </div>
+                                <div class="sidebar col-md-3 col-sm-6">
+                                    <div class="payment">
+                                        <h4>Accepted Payment</h4>
+                                    </div>
+                                </div>
+
+                                <div class="sidebar col-md-3 col-sm-6">
+                                    <aside id="text-8" class="widget widget_text">
+                                        <h4 class="widget-title">
+                                            <span>Contact Us</span>
+                                        </h4>
+                                        <div class="textwidget">
+                                            <ul class="widget-contact-info">
+                                                <li>
+                                                    <i class="fa fa-map-marker"/>
+                                                    <span t-field="res_company.country_id"/>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-phone"/>
+                                                    <span t-field="res_company.phone"/>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-paper-plane"/>
+                                                    <span t-field="res_company.email"/>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-clock-o"/>
+                                                    <span>Mon - Sat: 9:00 - 18:00
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </aside>
+                                </div>
+                                <div class="sidebar col-md-3 col-sm-6">
+                                    <aside id="nav_menu-7" class="widget widget_nav_menu">
+                                        <h4 class="widget-title">
+                                            <span>Sign up for emails</span>
+                                        </h4>
+                                        <div id="container_form_news">
+                                            <div class="input-group js_subscribe hidden"
+                                                    data-list-id="1"
+                                                    data-subscribe="off">
+                                                <input type="email"
+                                                       name="email"
+                                                       class="js_subscribe_email form-control"
+                                                       placeholder="your email..."/>
+                                                <span class="input-group-btn">
+                                                    <a href="#"
+                                                       class="btn btn-info js_subscribe_btn o_default_snippet_text">
+                                                        Subscribe
+                                                    </a>
+                                                    <a href="#"
+                                                       class="btn btn-info js_subscribed_btn hidden o_default_snippet_text"
+                                                       disabled="disabled">
+                                                        Thanks
+                                                    </a>
+                                                </span>
+                                                <div class="alert alert-success hidden o_default_snippet_text">
+                                                    Thanks for your subscription!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="back-top">
+                        <a class="img-square" href="#wrap">
+                            <i class="fa fa-chevron-up"/>
+                        </a>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

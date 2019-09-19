@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template name="Dark Counter Snippet" id="s_dark_counter">
+        <section class="state_section-dark bg-gray-darker" id="state_section_id"
+                 style="background-image: url('/web_theme_craig/static/src/img/counter.jpg');">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12 my-4">
+                        <div class="state_title">
+                            <h1 class="my-2 o_default_snippet_text">Discover new features, customization
+                                options and new effects
+                            </h1>
+                            <h4 class="o_default_snippet_text">Unlimited possibilities to create outstanding
+                                websites. Unique and useful demos for your next project.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pad0 state_text my-4">
+                        <section class="state-col-inner state-col-inner-dark bg-black-25">
+                            <i class="fa fa-500px pe-7s-drop fa-3x text-white"/>
+                            <div class="count_to animate_onoffset">
+                                <div class="odometer" data-number="1200" data-duration="2000"/>
+                            </div>
+                            <h3 class="o_default_snippet_text">Happy clients</h3>
+                        </section>
+                    </div>
+                    <div class="col-md-3 pad0 state_text my-4">
+                        <section class="state-col-inner state-col-inner-dark bg-black-25">
+                            <i class="fa fa-500px pe-7s-bicycle fa-3x"/>
+                            <div class="count_to animate_onoffset">
+                                <div class="odometer" data-number="1000" data-duration="2000"/>
+                            </div>
+                            <h3 class="o_default_snippet_text">Projects finished</h3>
+                        </section>
+                    </div>
+                    <div class="col-md-3 pad0 state_text my-4">
+                        <section class="state-col-inner state-col-inner-dark bg-black-25">
+                            <i class="fa fa-500px pe-7s-ball fa-3x"/>
+                            <div class="count_to animate_onoffset">
+                                <div class="odometer" data-number="560" data-duration="2000"/>
+                            </div>
+                            <h3 class="o_default_snippet_text">Support Tickets</h3>
+                        </section>
+                    </div>
+                    <div class="col-md-3 pad0 state_text my-4">
+                        <section class="state-col-inner state-col-inner-dark bg-black-25">
+                            <i class="fa fa-500px pe-7s-display1 fa-3x"/>
+                            <div class="count_to animate_onoffset">
+                                <div class="odometer" data-number="50" data-duration="2000"/>
+                            </div>
+                            <h3 class="o_default_snippet_text">Members</h3>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

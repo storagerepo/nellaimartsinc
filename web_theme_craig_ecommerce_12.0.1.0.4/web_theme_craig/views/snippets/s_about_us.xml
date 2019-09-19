@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="s_about_us" name="About Us">
+        <section class="s_about_us bg-white" id="s_about_us">
+            <div class="container">
+                <div class="row mt32 mb32">
+                    <div class="col-md-4 col-sm-12 mt32 mb32">
+                        <img src="/web_theme_craig/static/src/img/s_about_us.png" alt=""
+                             class="img img-fluid"/>
+                        <div class="content-wrapper text-center">
+                            <div class="content-wrapper-about">
+                                <a href="#" class="name o_default_snippet_text">Lara Crostina</a>
+                                <div class="position o_default_snippet_text">Grass Owner</div>
+                                <div class="content-text o_default_snippet_text">Hi everyone, i hope you
+                                    will like our gardening service and gardener.
+                                </div>
+                                <div class="social-wrapper mb24">
+                                    <ul class="list-unstyled list-inline list-social-wrapper">
+                                        <li class="list-inline-item">
+                                            <a href="#" class="link">
+                                                <i class="slz-icon fa fa-facebook"/>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="link">
+                                                <i class="slz-icon fa fa-twitter"/>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" class="link">
+                                                <i class="slz-icon fa fa-pinterest-p"/>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#" title="&quot;#&quot;" class="link">
+                                                <i class="slz-icon fa fa-google-plus"/>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 mt32 mb32">
+                        <div class="vc_column-inner vc_custom_1489562267671">
+                            <div class="wpb_wrapper">
+                                <div class="slz-shortcode sc_main_title main-title-202086650658f5e37a43178 text-l has-image">
+                                    <div class="slz-main-title">
+                                        <div class="icon-wrapper">
+                                            <i class="slz-icon fa fa-pagelines"/>
+                                        </div>
+                                        <h2 class="title o_default_snippet_text">WELCOME TO GRASS
+                                            COMPANY
+                                        </h2>
+                                        <div class="subtitle">
+                                            <span class="subtitle-inner o_default_snippet_text">Some
+                                                Word About Us
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_column content_element mt32">
+                                    <div class="wrapper">
+                                        <p class="o_default_snippet_text">Have you ever finally just
+                                            gave in to the temptation and read your horoscope line in
+                                            the newspaper on Sunday morning? Sure, we all have. For most
+                                            of us, it’s a curiosity, an amusement to see what they say
+                                            our day will be like based on the sign of the zodiac that we
+                                            were born under.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="vc_empty_space" style="height: 30px">
+                                    <span class="vc_empty_space_inner"/>
+                                </div>
+                                <div id="myCarousel1492765984350"
+                                     class="carousel slide s_carousel s_carousel_default"
+                                     data-interval="10000">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" style="min-height: 386px;">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="card">
+                                                        <img class="card-img-top"
+                                                             src="/web_theme_craig/static/src/img/service-01.jpg"
+                                                             alt="Chania"/>
+                                                        <div class="card-block">
+                                                            <h4 class="card-title o_default_snippet_text">
+                                                                Lawn And Flowers Decoration
+                                                            </h4>
+                                                            <div class="card-text o_default_snippet_text">
+                                                                There is a moment in the life of any
+                                                                aspiring astronomer an that it is time
+                                                                to
+                                                                buy that first telescope.
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-3">
+                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                <span class="text o_default_snippet_text">
+                                                                    Read More
+                                                                </span>
+                                                                <span class="icons fa fa-angle-double-right"/>
+                                                                />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card">
+                                                        <img class="card-img-top"
+                                                             src="/web_theme_craig/static/src/img/service-05.jpg"
+                                                             alt="Chania"/>
+                                                        <div class="card-block">
+                                                            <h4 class="card-title o_default_snippet_text">
+                                                                Lawn Care &amp; Maintenance
+                                                            </h4>
+                                                            <div class="card-text o_default_snippet_text">
+                                                                There is a moment in the life of any
+                                                                aspiring astronomer an that it is time
+                                                                to
+                                                                buy that first telescope.
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-3">
+                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                <span class="text o_default_snippet_text">
+                                                                    Read More
+                                                                </span>
+                                                                <span class="icons fa fa-angle-double-right"/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" style="min-height: 386px;">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="card">
+                                                        <img class="card-img-top"
+                                                             src="/web_theme_craig/static/src/img/service-05.jpg"
+                                                             alt="Chania"/>
+                                                        <div class="card-block">
+                                                            <h4 class="card-title o_default_snippet_text">
+                                                                Lawn Care &amp; Maintenance
+                                                            </h4>
+                                                            <div class="card-text o_default_snippet_text">
+                                                                There is a moment in the life of any
+                                                                aspiring astronomer an that it is time
+                                                                to
+                                                                buy that first telescope.
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-3">
+                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                <span class="text o_default_snippet_text">
+                                                                    Read More
+                                                                </span>
+                                                                <span class="icons fa fa-angle-double-right"/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card">
+                                                        <img class="card-img-top"
+                                                             src="/web_theme_craig/static/src/img/service-06.jpg"
+                                                             alt="Chania"/>
+                                                        <div class="card-block">
+                                                            <h4 class="card-title o_default_snippet_text">
+                                                                Flower Decoration
+                                                            </h4>
+                                                            <div class="card-text o_default_snippet_text">
+                                                                There is a moment in the life of any
+                                                                aspiring astronomer an that it is time
+                                                                to
+                                                                buy that first telescope.
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-3">
+                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                <span class="text o_default_snippet_text">
+                                                                    Read More
+                                                                </span>
+                                                                <span class="icons fa fa-angle-double-right"/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" style="min-height: 386px;">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="card">
+                                                        <img class="card-img-top"
+                                                             src="/web_theme_craig/static/src/img/service-06.jpg"
+                                                             alt="Chania"/>
+                                                        <div class="card-block">
+                                                            <h4 class="card-title o_default_snippet_text">
+                                                                Flower Decoration
+                                                            </h4>
+                                                            <div class="card-text o_default_snippet_text">
+                                                                There is a moment in the life of any
+                                                                aspiring astronomer an that it is time
+                                                                to
+                                                                buy that first telescope.
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-3">
+                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                <span class="text o_default_snippet_text">
+                                                                    Read More
+                                                                </span>
+                                                                <span class="icons fa fa-angle-double-right"/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card">
+                                                        <img class="card-img-top"
+                                                             src="/web_theme_craig/static/src/img/service-01.jpg"
+                                                             alt="Chania"/>
+                                                        <div class="card-block">
+                                                            <h4 class="card-title o_default_snippet_text">
+                                                                Lawn And Flowers Decoration
+                                                            </h4>
+                                                            <div class="card-text o_default_snippet_text">
+                                                                There is a moment in the life of any
+                                                                aspiring astronomer an that it is time
+                                                                to
+                                                                buy that first telescope.
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-3">
+                                                            <a href="#" class="slz-btn" tabindex="0">
+                                                                <span class="text o_default_snippet_text">
+                                                                    Read More
+                                                                </span>
+                                                                <span class="icons fa fa-angle-double-right"/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

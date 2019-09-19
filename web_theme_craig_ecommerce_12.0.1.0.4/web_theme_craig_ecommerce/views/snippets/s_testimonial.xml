@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template name="Side Testimonial" id="s_testimonial">
+        <section class="side_testimonial">
+            <div class="container-fluid bg_white walter_side">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <h4 class="card-header">
+                                <a data-toggle="collapse" href="#testimonial">
+                                    Testimonials
+                                    <i class="fa fa-plus pull-right"/>
+                                </a>
+                            </h4>
+                            <div id="testimonial" class="collapse show">
+                                <div class="card-body">
+                                    <div class="carousel slide s_carousel s_carousel_default" id="testimonial_item">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#testimonial_item" data-slide-to="0" class=""/>
+                                            <li data-target="#testimonial_item" data-slide-to="1" class="active"/>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item" style="min-height: 0px;">
+                                                <div class="testimonial_image">
+                                                    <img class="img img-fluid"
+                                                         src="/web_theme_craig_ecommerce/static/src/img/user1.jpg"
+                                                         alt="User1"/>
+                                                </div>
+                                                <div class="testimonial-user-title">
+                                                    <h5 class="o_default_snippet_text">
+                                                        john duff
+                                                    </h5>
+                                                    <span class="tttestimonial-subtitle  o_default_snippet_text">
+                                                        Producer
+                                                    </span>
+                                                </div>
+                                                <div class="testimonial-content ">
+                                                    <div class="testimonial-desc">
+                                                        <p class="o_default_snippet_text">
+                                                            Duis faucibus enim
+                                                            vitae nunc molestie,
+                                                            nec facilisis arcu
+                                                            pulvinar nullam
+                                                            mattis..
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item active" style="min-height: 0px;">
+                                                <div class="testimonial_image">
+                                                    <img class="img img-fluid"
+                                                         src="/web_theme_craig_ecommerce/static/src/img/user2.jpg"
+                                                         alt="User2"/>
+                                                </div>
+                                                <div class="testimonial-user-title">
+                                                    <h5 class="o_default_snippet_text">
+                                                        john smith
+                                                    </h5>
+                                                    <span class="tttestimonial-subtitle  o_default_snippet_text">
+                                                        Developer
+                                                    </span>
+                                                </div>
+                                                <div class="testimonial-content ">
+                                                    <div class="testimonial-desc">
+                                                        <p class="o_default_snippet_text">
+                                                            Duis faucibus enim
+                                                            vitae nunc molestie,
+                                                            nec facilisis arcu
+                                                            pulvinar nullam
+                                                            mattis..
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" style="min-height: 0px;">
+                                                <div class="testimonial_image">
+                                                    <img class="img img-fluid"
+                                                         src="/web_theme_craig_ecommerce/static/src/img/user3.jpg"
+                                                         alt="User3"/>
+                                                </div>
+                                                <div class="testimonial-user-title">
+                                                    <h5 class="o_default_snippet_text">
+                                                        john deo
+                                                    </h5>
+                                                    <span class="tttestimonial-subtitle  o_default_snippet_text">
+                                                        Producer
+                                                    </span>
+                                                </div>
+                                                <div class="testimonial-content ">
+                                                    <div class="testimonial-desc">
+                                                        <p class="o_default_snippet_text">
+                                                            Duis faucibus enim
+                                                            vitae nunc molestie,
+                                                            nec facilisis arcu
+                                                            pulvinar nullam
+                                                            mattis..
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-control-prev" data-target="#testimonial_item"
+                                             data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                                            <span class="carousel-control-prev-icon"/>
+                                            <span class="sr-only o_default_snippet_text">
+                                                Previous
+                                            </span>
+                                        </div>
+                                        <div class="carousel-control-next" data-target="#testimonial_item"
+                                             data-slide="next" role="img" aria-label="Next" title="Next">
+                                            <span class="carousel-control-next-icon"/>
+                                            <span class="sr-only o_default_snippet_text">
+                                                Next
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
