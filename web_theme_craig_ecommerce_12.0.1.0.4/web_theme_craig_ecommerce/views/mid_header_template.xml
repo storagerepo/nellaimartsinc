@@ -150,15 +150,15 @@
         </xpath>
         <xpath expr="//div[@id='mid-header-bottom-left']"
                position="attributes">
-            <attribute name="class">col-lg-4 col-sm-3 mt8 mb8 text-center</attribute>
+            <attribute name="class">col-lg-4 col-sm-3  text-center</attribute>
         </xpath>
         <xpath expr="//div[@id='mid-header-bottom-center']"
                position="attributes">
-            <attribute name="class">col-lg-4 col-sm-5 mt8 mb8</attribute>
+            <attribute name="class">col-lg-4 col-sm-5 </attribute>
         </xpath>
         <xpath expr="//div[@id='mid-header-bottom-right']"
                position="attributes">
-            <attribute name="class">col-lg-4 col-sm-4 mt8 mb8</attribute>
+            <attribute name="class">col-lg-4 col-sm-4 </attribute>
         </xpath>
     </template>
 

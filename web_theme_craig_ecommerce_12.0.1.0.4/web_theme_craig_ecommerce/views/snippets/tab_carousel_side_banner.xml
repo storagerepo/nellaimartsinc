@@ -3,7 +3,7 @@
     <template id="tab_carousel_banner_side_banner"
               name="Tab Carousel And Side Banner">
         <section>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div id="left_side_block"
                          class="col-lg-3 col-md-12 order-1">

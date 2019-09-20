@@ -60,7 +60,8 @@
 }
 
 .cart_contents {
-  background: $primary;
+  background: $secondary;
+//   background: #ffba00;
   border-radius: 0 0 30px 30px;
   -moz-border-radius: 0 0 30px 30px;
   -webkit-border-radius: 0 0 30px 30px;
@@ -69,7 +70,7 @@
   padding: 10px 5px 0 10px;
   position: absolute;
   z-index: 1;
-  top: -60px;
+  top: -65px;
   width: auto;
   right:0;
 }
