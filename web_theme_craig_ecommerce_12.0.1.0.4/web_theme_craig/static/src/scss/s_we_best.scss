@@ -1,0 +1,69 @@
+#s_we_best {
+  color: #fff;
+  .has-line {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: $success;
+    left: calc(50% - 2px);
+    transform: translateX(-50%);
+  }
+  .has-line {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      left: 45px;
+      height: 2px;
+      width: 10px;
+      background-color: $success;
+      top: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      left: 60px;
+      background-color: $success;
+      bottom: 0;
+    }
+  }
+  .title {
+    padding-top: 16px;
+  }
+  .slz-icon-block .icon-cell {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+  }
+  .slz-icon-block .icon-background .wrapper-icon {
+    background-color: $success;
+    border: 1px solid $success;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    .slz-icon {
+      z-index: 2;
+      display: block;
+      font-size: 24px;
+      max-height: 30px;
+      line-height: 1;
+      position: relative;
+      text-align: center;
+    }
+  }
+  .slz-icon-block {
+    width: 100%;
+    display: block;
+  }
+  .slz-icon-block.text-c {
+    text-align: center;
+  }
+  .slz-icon-block:hover .icon-background .wrapper-icon {
+    background-color: #fff;
+    color: $success;
+  }
+}

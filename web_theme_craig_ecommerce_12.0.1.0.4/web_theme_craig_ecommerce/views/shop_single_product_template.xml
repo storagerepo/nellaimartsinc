@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Product Single -->
+
+    <template id="product_single_page" inherit_id="website_sale.product">
+        <xpath expr="//div[hasclass('row')][2]" position="attributes">
+            <attribute name="class">row bg_white mb16</attribute>
+        </xpath>
+        <xpath expr="//a[@id='add_to_cart']" position="replace">
+            <a id="add_to_cart"
+               class="btn btn-primary mt8 js_check_product a-submit"
+               href="#">
+                <i class="fa pe-7s-cart "/>
+                Add to Cart
+            </a>
+        </xpath>
+    </template>
+
+    <template id="website_sale.product_quantity"
+              inherit_id="website_sale.product"
+              customize_show="True" name="Select Quantity">
+        <xpath expr="//a[@id='add_to_cart']" position="before">
+            <div
+                    class="css_quantity text-center input-group oe_website_spinner"
+                    style="float: left;" contenteditable="false">
+                <input type="number" class="form-control spinner-set-product"
+                       style="color: black; font-size: 16px;    height: 42px;
+    background-color: #fff;"
+                       data-min="1" name="add_qty" value="1" min="1"/>
+            </div>
+        </xpath>
+    </template>
+
+    <!--<template id="cart_line_inherit" inherit_id="website_sale.cart_lines"
+              name="Shopping Cart Lines">
+        <xpath expr="//td[@id='td-qty']" position="replace">
+            <td class="text-center" id="td-qty">
+                <div class="input-group oe_website_spinner" style="float: left;"
+                     contenteditable="false">
+                    <input type="number"
+                           class="js_quantity form-control quantity"
+                           t-att-data-line-id="line.id"
+                           t-att-data-product-id="line.product_id.id"
+                           t-att-value="int(line.product_uom_qty)"
+                           style="color: black; font-size: 16px;    height: 36px;
+    background-color: #fff;"
+                           data-min="1" name="add_qty" min="1"/>
+                </div>
+            </td>
+        </xpath>
+    </template>-->
+
+    <template id="product_rating" inherit_id="website_sale.product_price">
+        <xpath expr="//div[hasclass('product_price', 'mt16')]" position="before">
+            <t t-name="website_rating.rating_stars_static">
+                <t t-set="val_integer"
+                   t-value="round(product.rating_get_stats()['avg'])"/>
+                <t t-set="val_decimal" t-value="0"/>
+                <t t-set="empty_star"
+                   t-value="5 - val_integer"/>
+                <div class="o_website_rating_static">
+                    <t t-foreach="range(0,val_integer)"
+                       t-as="num">
+                        <i class="fa fa-star"/>
+                    </t>
+                    <t t-if="val_decimal">
+                        <i class="fa fa-star-half-o"/>
+                    </t>
+                    <t t-foreach="range(0,empty_star)" t-as="num">
+                        <i class="fa fa-star-o"/>
+                    </t>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Add WishList Option in Single Product Page -->
+    <template id="website_sale_wishlist.product_add_to_wishlist" name='Add to wishlist in product page' inherit_id="website_sale.product">
+        <xpath expr="//a[@id='add_to_cart']" position="after">
+            <t t-if="product.env.ref('web_theme_craig_ecommerce.products_add_to_wish_list_inherit').active">
+                <t t-set="in_wish" t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>
+                <a class="mt8 o_add_wishlist_dyn js_add_remove_wish_list_json" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist"><span class="fa fa-heart"></span> Add to Wishlist</a>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="website_sale_comparison.product_add_to_compare" name='Add to comparison in product page' inherit_id="website_sale.product">
+        <xpath expr="//a[@id='add_to_cart']" position="after">
+            <t t-if="product.env.ref('web_theme_craig_ecommerce.add_to_compare_shortlist').active">
+                <a class="hidden-xs add_compare mt8 o_add_compare_dyn" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist"><span class="fa fa-exchange"></span> Compare</a>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="website_product_page_layout_73lines.product_comment_new"
+              inherit_id="website_product_page_layout_73lines.product_description_new_style"
+              active="False" customize_show="True"
+              name="Discussion and Rating">
+        <xpath expr="//li[@id='li-full-desc']" position="after">
+            <li id="li-comment" class="nav-item">
+                <a href="#full-comment" data-toggle="tab" class="nav-link">
+                    <strong>Discussion and Rating</strong>
+                </a>
+            </li>
+        </xpath>
+        <xpath expr="//div[@id='full-desc']" position="after">
+            <div class="tab-pane fade" id="full-comment">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-muted">
+                                <h5>
+                                    <i class="fa fa-comment-o"/>
+                                    <a id="comments">
+                                        <t t-if="len(product.website_message_ids) &lt;= 1">
+                                            <t t-esc="len(product.website_message_ids)"/>
+                                            comment
+                                        </t>
+                                        <t t-if="len(product.website_message_ids) > 1">
+                                            <t t-esc="len(product.website_message_ids)"/>
+                                            comments
+                                        </t>
+                                    </a>
+                                </h5>
+                            </div>
+                            <t t-call="portal.message_thread">
+                                <t t-set="object" t-value="product"/>
+                                <t t-set="display_rating" t-value="True"/>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

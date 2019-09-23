@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template name="Title SubTilte" id="s_title_subtitle">
+        <section id="s_title_subtitle" class="bg-white">
+            <div class="container">
+                <div class="oe_structure">
+                    <div class="row mt32 mb32 text-center">
+                        <div class="col-md-12 slz-main-title">
+                            <div class="icon-wrapper">
+                                <i class="slz-icon fa fa-pagelines fa-2x"/>
+                            </div>
+                            <h2 class="my-2 title">Title</h2>
+                            <div class="subtitle">
+                                <span class="subtitle-inner">Sub Title</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

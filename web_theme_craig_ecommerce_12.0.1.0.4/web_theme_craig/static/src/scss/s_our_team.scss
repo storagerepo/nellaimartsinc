@@ -1,0 +1,103 @@
+#s_our_team {
+
+  .subtitle-inner {
+    font-size: 16px;
+  }
+  .team {
+    img {
+      margin: 0 auto;
+    }
+    .team-content {
+      text-align: center;
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      left: 30px;
+      right: 30px;
+      background-color: #fff;
+      z-index: 5;
+      padding: 20px 10px;
+      transform: translateY(calc(100% - 105px)) translateZ(0) scale(1);
+      -webkit-transform: translateY(calc(100% - 105px)) translateZ(0) scale(1);
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      z-index: 4;
+      .name {
+        color: $info;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+      .position {
+        color: $info;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+      .social-list {
+        margin-left: -5px;
+        margin-right: -5px;
+        position: relative;
+        .text {
+          display: none;
+        }
+        .social-item {
+          background-color: transparent;
+          color: #333;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+          margin: 10px;
+          padding: 0;
+        }
+      }
+    }
+    &:hover {
+      .team-content {
+        background-color: $success;
+
+        .position, .name {
+          color: #fff;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .team-content {
+      background-color: $success !important;
+
+      .position, .name {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+div.icon-wrapper {
+  i {
+    color: $success;
+  }
+  &:after {
+    content: '';
+    top: 25px;
+    margin-left: 10px;
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: $success;
+    bottom: 0;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: 25px;
+    background-color: $success;
+    bottom: 0;
+    left: 43%;
+  }
+}

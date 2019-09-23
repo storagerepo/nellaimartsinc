@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="web_theme_craig_assets_frontend" name="Theme Craig Frontend Assets"
+              inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script src="/web_theme_craig/static/src/js/navbarfix.js" type="text/javascript"/>
+            <script src="/web_theme_craig/static/src/js/jquery.nicescroll.min.js" type="text/javascript"/>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/common.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/custom_owl.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/header_template.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/footer.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/s_banner.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/contact_us.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/blog_page.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/aboutus.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/homepage.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/service_page.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/s_our_service.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/s_about_us.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/s_testimonial_faq.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/s_our_team.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/s_service.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/s_dark_counter.scss"/>
+            <link rel="stylesheet" type="text/scss"
+                  href="/web_theme_craig/static/src/scss/s_we_best.scss"/>
+        </xpath>
+    </template>
+
+    <template id="web_theme_craig_snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']" position="inside">
+            <div class="o_panel_body">
+                <t t-snippet="web_theme_craig.s_our_service" t-thumbnail="/web_theme_craig/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig.s_about_us" t-thumbnail="/web_theme_craig/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig.s_testimonial_faq" t-thumbnail="/web_theme_craig/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig.s_our_team" t-thumbnail="/web_theme_craig/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig.s_service" t-thumbnail="/web_theme_craig/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig.s_dark_counter" t-thumbnail="/web_theme_craig/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig.s_we_best" t-thumbnail="/web_theme_craig/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig.s_title_subtitle" t-thumbnail="/web_theme_craig/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig.s_title_subtitle_text" t-thumbnail="/web_theme_craig/static/src/img/s-icon.png"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

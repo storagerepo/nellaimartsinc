@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="service" model="ir.ui.view">
+        <field name="name">Craig Modern Service</field>
+        <field name="type">qweb</field>
+        <field name="key">website.service</field>
+        <field name="arch" type="xml">
+            <t name="Craig Modern Service" t-name="website.service">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure">
+                        <section class="service_banner s_text_block_image_fw oe_img_bg oe_custom_bg"
+                                 style="background-image: url(/web_theme_craig/static/src/img/service_banner.jpg); background-position: 50% 100%">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 slz-main-title text-center">
+                                        <div class="has-line"/>
+                                        <h2 class="my-3 title">SERVICES</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="header_page normal no_parallax">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <h1 class="my-2">Services Modern</h1>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-inline list-unstyled page_parents text-right">
+                                            <li class="list-inline-item">You are here:</li>
+                                            <li class="list-inline-item home">
+                                                <a href="/" class="text-black">Home</a>
+                                            </li>
+                                            <li class="list-inline-item active">
+                                                <a href="#">Services Modern</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_service bg-white" id="s_service">
+                            <div class="container">
+                                <div class="row mt32 mb32">
+                                    <div class="col-md-12 slz-main-title text-center">
+                                        <div class="has-line mt8 mb16"/>
+                                        <h2 class="title o_default_snippet_text">OUR MAIN SERVICES</h2>
+                                        <div class="description o_default_snippet_text">Discovered the lens win the
+                                            bifocal eye-glasses ,then recently they do the same thing in a bifocal
+                                            contact lens. The lens is divided into two halves eye glasses.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt16 mb32">
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-tree"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Flowers Decoration</div>
+                                                    <div class="description o_default_snippet_text">It is probably the
+                                                        dream of any amateur in an astronomer to be able to be .
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-pagelines"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Waste Removal</div>
+                                                    <div class="description o_default_snippet_text">The first thing that
+                                                        comes to mind after do on the surgery is whether to down the
+                                                        size.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-leaf"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Wedding Decoration</div>
+                                                    <div class="description o_default_snippet_text">Breast implant that
+                                                        you would like to do the surgeon to place inside your chest that
+                                                        capture.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-sun-o"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Lawn Maintenance</div>
+                                                    <div class="description o_default_snippet_text">In the life of any
+                                                        aspiring astronomer that it is time to buy that first telescope
+                                                        that capture.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-scissors"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Grass Cutting</div>
+                                                    <div class="description o_default_snippet_text">Of all of the
+                                                        celestial bodies that capture our attention and fascination that
+                                                        capture.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 item item-4 faceIn wow animated">
+                                        <div class="slz-icon-block text-l">
+                                            <div class="icon-cell icon-background icon-circle">
+                                                <div class="wrapper-icon">
+                                                    <i class="slz-icon fa fa-building"/>
+                                                </div>
+                                            </div>
+                                            <div class="content-cell ">
+                                                <div class="wrapper-info">
+                                                    <div class="title o_default_snippet_text">Stone Walls</div>
+                                                    <div class="description o_default_snippet_text">There is a lot of
+                                                        exciting stuff going on in an the stars above us that make that
+                                                        capture.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-block direction-hover"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_our_service bg-white"
+                                 id="s_our_service">
+                            <div class="container">
+                                <div class="row mt64 mb32">
+                                    <div class="col-md-12">
+                                        <div class="section_title">
+                                            <h6 class="o_default_snippet_text">
+                                                WHAT WE DO
+                                            </h6>
+                                            <h2 class="o_default_snippet_text">
+                                                Our Service
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 mb16 mt16">
+                                        <div class="single_service">
+                                            <h4>
+                                                <a href="#"
+                                                   class="o_default_snippet_text">
+                                                    Investment Advisor
+                                                </a>
+                                            </h4>
+                                            <p class="o_default_snippet_text">
+                                                Ut wisi enim ad minim veniam,
+                                                quis nostrud exerci
+                                                tation
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 mb16 mt16">
+                                        <div class="single_service">
+                                            <h4>
+                                                <a href="#"
+                                                   class="o_default_snippet_text">
+                                                    Mortgage Advisor
+                                                </a>
+                                            </h4>
+                                            <p class="o_default_snippet_text">
+                                                Ut wisi enim ad minim veniam,
+                                                quis nostrud exerci
+                                                tation
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 mb16 mt16">
+                                        <div class="single_service">
+                                            <h4>
+                                                <a href="#"
+                                                   class="o_default_snippet_text">
+                                                    Mortgage Advisor
+                                                </a>
+                                            </h4>
+                                            <p class="o_default_snippet_text">
+                                                Ut wisi enim ad minim veniam,
+                                                quis nostrud exerci
+                                                tation
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 mb16 mt16">
+                                        <div class="single_service">
+                                            <h4>
+                                                <a href="#"
+                                                   class="o_default_snippet_text">
+                                                    Saving Money
+                                                </a>
+                                            </h4>
+                                            <p class="o_default_snippet_text">
+                                                Ut wisi enim ad minim veniam,
+                                                quis nostrud exerci
+                                                tation
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="service_page" model="website.page">
+        <field name="website_published">True</field>
+        <field name="url">/service</field>
+        <field name="view_id" ref="service"/>
+    </record>
+</odoo>

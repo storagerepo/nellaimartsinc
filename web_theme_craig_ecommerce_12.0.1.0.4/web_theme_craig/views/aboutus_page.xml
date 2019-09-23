@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="website.aboutus" name="About us">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure" id="about_us">
+                    <section class="parallax s_parallax oe_img_bg oe_custom_bg"
+                             style="background-image: url(&quot;/web_theme_craig/static/src/img/slider-2.jpg&quot;);"
+                             data-scroll-background-ratio="0.3">
+                        <div class="oe_structure">
+                            <section class="my-4 s_title">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="icon-wrapper">
+                                                <i class="slz-icon fa fa-pagelines fa-2x"/>
+                                            </div>
+                                            <h1 class="text-center my-2">About Our Company
+                                                <br/>
+                                            </h1>
+                                            <h3 class="text-center text-muted">Power &amp;amp; Progress
+                                                <br/>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                    <section class="header_page normal no_parallax">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <h1 class="my-2">About Us</h1>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-inline list-unstyled page_parents text-right">
+                                        <li class="list-inline-item">You are here:</li>
+                                        <li class="list-inline-item home">
+                                            <a href="/" class="text-black">Home</a>
+                                        </li>
+                                        <li class="list-inline-item active">
+                                            <a href="#">About Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_about_us bg-white" id="s_about_us">
+                        <div class="container">
+                            <div class="row mt32 mb32">
+                                <div class="col-md-4 col-sm-12 mt32 mb32">
+                                    <img src="/web_theme_craig/static/src/img/s_about_us.png" alt=""
+                                         class="img img-fluid"/>
+                                    <div class="content-wrapper text-center">
+                                        <div class="content-wrapper-about">
+                                            <a href="#" class="name o_default_snippet_text">Lara Crostina</a>
+                                            <div class="position o_default_snippet_text">Grass Owner</div>
+                                            <div class="content-text o_default_snippet_text">Hi everyone, i hope you
+                                                will like our gardening service and gardener.
+                                            </div>
+                                            <div class="social-wrapper mb24">
+                                                <ul class="list-unstyled list-inline list-social-wrapper">
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="link">
+                                                            <i class="slz-icon fa fa-facebook"/>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="link">
+                                                            <i class="slz-icon fa fa-twitter"/>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="link">
+                                                            <i class="slz-icon fa fa-pinterest-p"/>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" title="&quot;#&quot;" class="link">
+                                                            <i class="slz-icon fa fa-google-plus"/>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 mt32 mb32">
+                                    <div class="vc_column-inner vc_custom_1489562267671">
+                                        <div class="wpb_wrapper">
+                                            <div class="slz-shortcode sc_main_title main-title-202086650658f5e37a43178 text-l has-image">
+                                                <div class="slz-main-title">
+                                                    <div class="icon-wrapper">
+                                                        <i class="slz-icon fa fa-pagelines"/>
+                                                    </div>
+                                                    <h2 class="title o_default_snippet_text">WELCOME TO GRASS
+                                                        COMPANY
+                                                    </h2>
+                                                    <div class="subtitle">
+                                                        <span class="subtitle-inner o_default_snippet_text">Some
+                                                            Word About Us
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text_column content_element mt32">
+                                                <div class="wrapper">
+                                                    <p class="o_default_snippet_text">Have you ever finally just
+                                                        gave in to the temptation and read your horoscope line in
+                                                        the newspaper on Sunday morning? Sure, we all have. For most
+                                                        of us, it’s a curiosity, an amusement to see what they say
+                                                        our day will be like based on the sign of the zodiac that we
+                                                        were born under.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="vc_empty_space" style="height: 30px">
+                                                <span class="vc_empty_space_inner"/>
+                                            </div>
+                                            <div id="myCarousel1492765984350"
+                                                 class="carousel slide s_carousel s_carousel_default"
+                                                 data-interval="10000">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active" style="min-height: 386px;">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="card">
+                                                                    <img class="card-img-top"
+                                                                         src="/web_theme_craig/static/src/img/service-01.jpg"
+                                                                         alt="Chania"/>
+                                                                    <div class="card-block">
+                                                                        <h4 class="card-title o_default_snippet_text">
+                                                                            Lawn And Flowers Decoration
+                                                                        </h4>
+                                                                        <div class="card-text o_default_snippet_text">
+                                                                            There is a moment in the life of any
+                                                                            aspiring astronomer an that it is time
+                                                                            to
+                                                                            buy that first telescope.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pt-3">
+                                                                        <a href="#" class="slz-btn" tabindex="0">
+                                                                            <span class="text o_default_snippet_text">
+                                                                                Read More
+                                                                            </span>
+                                                                            <span class="icons fa fa-angle-double-right"/>
+                                                                            />
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="card">
+                                                                    <img class="card-img-top"
+                                                                         src="/web_theme_craig/static/src/img/service-05.jpg"
+                                                                         alt="Chania"/>
+                                                                    <div class="card-block">
+                                                                        <h4 class="card-title o_default_snippet_text">
+                                                                            Lawn Care &amp; Maintenance
+                                                                        </h4>
+                                                                        <div class="card-text o_default_snippet_text">
+                                                                            There is a moment in the life of any
+                                                                            aspiring astronomer an that it is time
+                                                                            to
+                                                                            buy that first telescope.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pt-3">
+                                                                        <a href="#" class="slz-btn" tabindex="0">
+                                                                            <span class="text o_default_snippet_text">
+                                                                                Read More
+                                                                            </span>
+                                                                            <span class="icons fa fa-angle-double-right"/>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" style="min-height: 386px;">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="card">
+                                                                    <img class="card-img-top"
+                                                                         src="/web_theme_craig/static/src/img/service-05.jpg"
+                                                                         alt="Chania"/>
+                                                                    <div class="card-block">
+                                                                        <h4 class="card-title o_default_snippet_text">
+                                                                            Lawn Care &amp; Maintenance
+                                                                        </h4>
+                                                                        <div class="card-text o_default_snippet_text">
+                                                                            There is a moment in the life of any
+                                                                            aspiring astronomer an that it is time
+                                                                            to
+                                                                            buy that first telescope.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pt-3">
+                                                                        <a href="#" class="slz-btn" tabindex="0">
+                                                                            <span class="text o_default_snippet_text">
+                                                                                Read More
+                                                                            </span>
+                                                                            <span class="icons fa fa-angle-double-right"/>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="card">
+                                                                    <img class="card-img-top"
+                                                                         src="/web_theme_craig/static/src/img/service-06.jpg"
+                                                                         alt="Chania"/>
+                                                                    <div class="card-block">
+                                                                        <h4 class="card-title o_default_snippet_text">
+                                                                            Flower Decoration
+                                                                        </h4>
+                                                                        <div class="card-text o_default_snippet_text">
+                                                                            There is a moment in the life of any
+                                                                            aspiring astronomer an that it is time
+                                                                            to
+                                                                            buy that first telescope.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pt-3">
+                                                                        <a href="#" class="slz-btn" tabindex="0">
+                                                                            <span class="text o_default_snippet_text">
+                                                                                Read More
+                                                                            </span>
+                                                                            <span class="icons fa fa-angle-double-right"/>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" style="min-height: 386px;">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="card">
+                                                                    <img class="card-img-top"
+                                                                         src="/web_theme_craig/static/src/img/service-06.jpg"
+                                                                         alt="Chania"/>
+                                                                    <div class="card-block">
+                                                                        <h4 class="card-title o_default_snippet_text">
+                                                                            Flower Decoration
+                                                                        </h4>
+                                                                        <div class="card-text o_default_snippet_text">
+                                                                            There is a moment in the life of any
+                                                                            aspiring astronomer an that it is time
+                                                                            to
+                                                                            buy that first telescope.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pt-3">
+                                                                        <a href="#" class="slz-btn" tabindex="0">
+                                                                            <span class="text o_default_snippet_text">
+                                                                                Read More
+                                                                            </span>
+                                                                            <span class="icons fa fa-angle-double-right"/>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="card">
+                                                                    <img class="card-img-top"
+                                                                         src="/web_theme_craig/static/src/img/service-01.jpg"
+                                                                         alt="Chania"/>
+                                                                    <div class="card-block">
+                                                                        <h4 class="card-title o_default_snippet_text">
+                                                                            Lawn And Flowers Decoration
+                                                                        </h4>
+                                                                        <div class="card-text o_default_snippet_text">
+                                                                            There is a moment in the life of any
+                                                                            aspiring astronomer an that it is time
+                                                                            to
+                                                                            buy that first telescope.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pt-3">
+                                                                        <a href="#" class="slz-btn" tabindex="0">
+                                                                            <span class="text o_default_snippet_text">
+                                                                                Read More
+                                                                            </span>
+                                                                            <span class="icons fa fa-angle-double-right"/>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_we_best bg-gray-darker" id="s_we_best"
+                             style="background-image: url('/web_theme_craig/static/src/img/about-bg01.jpg');">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 my-4">
+                                    <div class="slz-main-title text-center">
+                                        <div class="icon-wrapper">
+                                            <i class="slz-icon fa fa-pagelines fa-2x"/>
+                                        </div>
+                                        <h2 class="title o_default_snippet_text">WHY WE ARE THE BEST</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 text-center my-3">
+                                    <div class="slz-icon-block text-c">
+                                        <div class="icon-cell icon-background icon-circle">
+                                            <div class="wrapper-icon">
+                                                <i class="slz-icon fa fa-tree"/>
+                                            </div>
+                                        </div>
+                                        <div class="content-cell">
+                                            <div class="wrapper-info">
+                                                <div class="title o_default_snippet_text">Good Service</div>
+                                                <div class="description o_default_snippet_text">In the history of modern
+                                                    astronomy, there is probably no one greater.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-icon-block direction-hover"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center my-3">
+                                    <div class="slz-icon-block text-c">
+                                        <div class="icon-cell icon-background icon-circle">
+                                            <div class="wrapper-icon">
+                                                <i class="slz-icon fa fa-users"/>
+                                            </div>
+                                        </div>
+                                        <div class="content-cell">
+                                            <div class="wrapper-info">
+                                                <div class="title o_default_snippet_text">Creative Team</div>
+                                                <div class="description o_default_snippet_text">In the history of modern
+                                                    astronomy, there is probably no one greater.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-icon-block direction-hover"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center my-3">
+                                    <div class="slz-icon-block text-c">
+                                        <div class="icon-cell icon-background icon-circle">
+                                            <div class="wrapper-icon">
+                                                <i class="slz-icon fa fa-link"/>
+                                            </div>
+                                        </div>
+                                        <div class="content-cell">
+                                            <div class="wrapper-info">
+                                                <div class="title o_default_snippet_text">Full Project Support</div>
+                                                <div class="description o_default_snippet_text">In the history of modern
+                                                    astronomy, there is probably no one greater.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-icon-block direction-hover"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center mb32 mt32">
+                                    <div class="slz-icon-block text-c">
+                                        <div class="icon-cell icon-background icon-circle">
+                                            <div class="wrapper-icon">
+                                                <i class="slz-icon fa fa-rocket"/>
+                                            </div>
+                                        </div>
+                                        <div class="content-cell">
+                                            <div class="wrapper-info">
+                                                <div class="title o_default_snippet_text">Launch Project Fast</div>
+                                                <div class="description o_default_snippet_text">In the history of modern
+                                                    astronomy, there is probably no one greater.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-icon-block direction-hover"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="my-4">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 my-4">
+                                    <h3 class="heading-about o_default_snippet_text">Digitalization – Culture –
+                                        Marketing
+                                    </h3>
+                                    <div class="title">
+                                        <h1 class="my-2 o_default_snippet_text">About US</h1>
+                                    </div>
+                                    <div class="line"/>
+                                    <div class="row">
+                                        <div class="col-md-6 mt16">
+                                            <div class="header-text">
+                                                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, conse
+                                                    ctetur
+                                                    adipiscing elit. Nullam etted mpus metus, et commodo. leo sit amet
+                                                    tempor maximus.
+                                                </p>
+                                            </div>
+                                            <div class="body-text mt8">
+                                                <p class="o_default_snippet_text">Etiam eu molestie eros, commodo
+                                                    hendrerit
+                                                    sapien. Maecenas tempus leo ac nisi iaculis porta. Sed sapien
+                                                    tortor,
+                                                    aliquet a velit ut, lacinia molestie velit. Maecenas ornare
+                                                    consequat
+                                                    massa ullamcorper dapibus. Aliquam auctor, sapien sit amet accumsan
+                                                    facilisis, enim enim aliquet arcu, tincidunt pellentesque justo
+                                                    turpis
+                                                    id neque. Duis eleifend nunc sit amet mi dapibus ornare. Suspendisse
+                                                    vel
+                                                    libero sem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="services_large style_1">
+                                                        <div class="chart_skill">
+                                                            <div class="chart" data-percent="86%" data-color2="#ebebeb">
+                                                                <span class="text o_default_snippet_text" style="">86%
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <h4>
+                                                            <a class="o_default_snippet_text">Reliability</a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="services_large style_1">
+                                                        <div class="chart_skill">
+                                                            <div class="chart" data-percent="100%"
+                                                                 data-color2="#ebebeb">
+                                                                <span class="text o_default_snippet_text" style="">
+                                                                    100%
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <h4>
+                                                            <a class="o_default_snippet_text">Income</a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="state_section-dark bg-gray-darker" id="state_section_id"
+                             style="background-image: url('/web_theme_craig/static/src/img/counter.jpg');">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-12 my-4">
+                                    <div class="state_title">
+                                        <h1 class="my-2 o_default_snippet_text">Discover new features, customization
+                                            options and new effects
+                                        </h1>
+                                        <h4 class="o_default_snippet_text">Unlimited possibilities to create outstanding
+                                            websites. Unique and useful demos for your next project.
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 pad0 state_text my-4">
+                                    <section class="state-col-inner state-col-inner-dark bg-black-25">
+                                        <i class="fa fa-500px pe-7s-drop fa-3x text-white"/>
+                                        <div class="count_to animate_onoffset">
+                                            <div class="odometer" data-number="1200" data-duration="2000"/>
+                                        </div>
+                                        <h3 class="o_default_snippet_text">Happy clients</h3>
+                                    </section>
+                                </div>
+                                <div class="col-md-3 pad0 state_text my-4">
+                                    <section class="state-col-inner state-col-inner-dark bg-black-25">
+                                        <i class="fa fa-500px pe-7s-bicycle fa-3x"/>
+                                        <div class="count_to animate_onoffset">
+                                            <div class="odometer" data-number="1000" data-duration="2000"/>
+                                        </div>
+                                        <h3 class="o_default_snippet_text">Projects finished</h3>
+                                    </section>
+                                </div>
+                                <div class="col-md-3 pad0 state_text my-4">
+                                    <section class="state-col-inner state-col-inner-dark bg-black-25">
+                                        <i class="fa fa-500px pe-7s-ball fa-3x"/>
+                                        <div class="count_to animate_onoffset">
+                                            <div class="odometer" data-number="560" data-duration="2000"/>
+                                        </div>
+                                        <h3 class="o_default_snippet_text">Support Tickets</h3>
+                                    </section>
+                                </div>
+                                <div class="col-md-3 pad0 state_text my-4">
+                                    <section class="state-col-inner state-col-inner-dark bg-black-25">
+                                        <i class="fa fa-500px pe-7s-display1 fa-3x"/>
+                                        <div class="count_to animate_onoffset">
+                                            <div class="odometer" data-number="50" data-duration="2000"/>
+                                        </div>
+                                        <h3 class="o_default_snippet_text">Members</h3>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_our_team bg-white" id="s_our_team">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-12 my-4 slz-main-title">
+                                    <div class="icon-wrapper">
+                                        <i class="slz-icon fa fa-pagelines fa-2x"/>
+                                    </div>
+                                    <h2 class="title o_default_snippet_text my-2">MEET OUR GARDENER</h2>
+                                    <div class="subtitle">
+                                        <span class="subtitle-inner o_default_snippet_text">Team Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-md-3 col-sm-6 col-xs-12 my-3">
+                                    <div class="team">
+                                        <div class="team_image">
+                                            <img class="img img-fluid"
+                                                 src="/web_theme_craig/static/src/img/team.jpg"/>
+                                        </div>
+                                        <div class="team-content">
+                                            <div class="content-wrapper">
+                                                <a href="#" class="title name o_default_snippet_text" tabindex="0">
+                                                    David Benjamin
+                                                </a>
+                                                <div class="position o_default_snippet_text">Senior Gardener
+                                                </div>
+                                                <div class="social-list">
+                                                    <a href="#" class="social-item facebook" tabindex="0">
+                                                        <i class="slz-icons fa fa-facebook"/>
+                                                        <span class="text o_default_snippet_text">Facebook
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="social-item twitter" tabindex="0">
+                                                        <i class="slz-icons fa fa-twitter"/>
+                                                        <span class="text o_default_snippet_text">Twitter</span>
+                                                    </a>
+                                                    <a href="#" class="social-item google-plus" tabindex="0">
+                                                        <i class="slz-icons fa fa-google-plus"/>
+                                                        <span class="text o_default_snippet_text">Google+</span>
+                                                    </a>
+                                                    <a href="#" class="social-item pinterest" tabindex="0">
+                                                        <i class="slz-icons fa fa-pinterest"/>
+                                                        <span class="text o_default_snippet_text">Pinterest
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12 my-3">
+                                    <div class="team">
+                                        <div class="team_image">
+                                            <img class="img img-fluid"
+                                                 src="/web_theme_craig/static/src/img/team05.jpg"/>
+                                        </div>
+                                        <div class="team-content">
+                                            <div class="content-wrapper">
+                                                <a href="#" class="title name o_default_snippet_text" tabindex="0">
+                                                    Mary Sulvian
+                                                </a>
+                                                <div class="position o_default_snippet_text">Senior Gardener
+                                                </div>
+                                                <div class="social-list">
+                                                    <a href="#" class="social-item facebook" tabindex="0">
+                                                        <i class="slz-icons fa fa-facebook"/>
+                                                        <span class="text o_default_snippet_text">Facebook
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="social-item twitter" tabindex="0">
+                                                        <i class="slz-icons fa fa-twitter"/>
+                                                        <span class="text o_default_snippet_text">Twitter</span>
+                                                    </a>
+                                                    <a href="#" class="social-item google-plus" tabindex="0">
+                                                        <i class="slz-icons fa fa-google-plus"/>
+                                                        <span class="text o_default_snippet_text">Google+</span>
+                                                    </a>
+                                                    <a href="#" class="social-item pinterest" tabindex="0">
+                                                        <i class="slz-icons fa fa-pinterest"/>
+                                                        <span class="text o_default_snippet_text">Pinterest
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12 my-3">
+                                    <div class="team">
+                                        <div class="team_image">
+                                            <img class="img img-fluid"
+                                                 src="/web_theme_craig/static/src/img/team04.jpg"/>
+                                        </div>
+                                        <div class="team-content">
+                                            <div class="content-wrapper">
+                                                <a href="#" class="title name o_default_snippet_text" tabindex="0">
+                                                    John Mathew
+                                                </a>
+                                                <div class="position o_default_snippet_text">Senior Gardener
+                                                </div>
+                                                <div class="social-list">
+                                                    <a href="#" class="social-item facebook" tabindex="0">
+                                                        <i class="slz-icons fa fa-facebook"/>
+                                                        <span class="text o_default_snippet_text">Facebook
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="social-item twitter" tabindex="0">
+                                                        <i class="slz-icons fa fa-twitter"/>
+                                                        <span class="text o_default_snippet_text">Twitter</span>
+                                                    </a>
+                                                    <a href="#" class="social-item google-plus" tabindex="0">
+                                                        <i class="slz-icons fa fa-google-plus"/>
+                                                        <span class="text o_default_snippet_text">Google+</span>
+                                                    </a>
+                                                    <a href="#" class="social-item pinterest" tabindex="0">
+                                                        <i class="slz-icons fa fa-pinterest"/>
+                                                        <span class="text o_default_snippet_text">Pinterest
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12 my-3">
+                                    <div class="team">
+                                        <div class="team_image">
+                                            <img class="img img-fluid"
+                                                 src="/web_theme_craig/static/src/img/team02.jpg"/>
+                                        </div>
+                                        <div class="team-content">
+                                            <div class="content-wrapper">
+                                                <a href="#" class="title name o_default_snippet_text" tabindex="0">
+                                                    Laura Keith
+                                                </a>
+                                                <div class="position o_default_snippet_text">Senior Gardener
+                                                </div>
+                                                <div class="social-list">
+                                                    <a href="#" class="social-item facebook" tabindex="0">
+                                                        <i class="slz-icons fa fa-facebook"/>
+                                                        <span class="text o_default_snippet_text">Facebook
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="social-item twitter" tabindex="0">
+                                                        <i class="slz-icons fa fa-twitter"/>
+                                                        <span class="text o_default_snippet_text">Twitter</span>
+                                                    </a>
+                                                    <a href="#" class="social-item google-plus" tabindex="0">
+                                                        <i class="slz-icons fa fa-google-plus"/>
+                                                        <span class="text o_default_snippet_text">Google+</span>
+                                                    </a>
+                                                    <a href="#" class="social-item pinterest" tabindex="0">
+                                                        <i class="slz-icons fa fa-pinterest"/>
+                                                        <span class="text o_default_snippet_text">Pinterest
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

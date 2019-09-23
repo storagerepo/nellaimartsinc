@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="website_product_page_layout_73lines.product_side_block"
+              inherit_id="website_sale.product" name="Product Side Block"
+              active="False" customize_show="True">
+        <xpath expr="//div[hasclass('col-md-6')]" position="attributes">
+            <attribute name="class">col-sm-4 col-md-4 col-lg-4
+            </attribute>
+        </xpath>
+        <xpath expr="//div[@id='product_details']" position="attributes">
+            <attribute name="class">col-sm-4 col-md-4 col-lg-4</attribute>
+        </xpath>
+        <xpath expr="//section[@id='product_detail']/div[2]" position="inside">
+            <div class="col-sm-4 col-md-4 col-lg-4 oe_structure">
+                <section class="s_ecommerce_terms s_three_boxes_with_icon mt32 mb32">
+                    <div class="container">
+                        <div class="row">
+                            <div class="feature-box col-md-2 mt16 mb8">
+                                <span class="fa fa-home fa-1x img-circle bg-primary"/>
+                            </div>
+                            <div class="col-md-10 mt8 mb8">
+                                <h4>FREE SHIPPING &amp;amp; RETURN</h4>
+                                <p>Free shipping on all orders over $99.</p>
+                            </div>
+                            <div class="feature-box col-md-2 mt16 mb8">
+                                <span class="fa fa-check fa-1x img-circle bg-primary"/>
+                            </div>
+                            <div class="col-md-10 mt8 mb8">
+                                <h4>FREE SHIPPING &amp;amp; RETURN</h4>
+                                <p>Free shipping on all orders over $99.</p>
+                            </div>
+                            <div class="feature-box col-md-2 mt16 mb8">
+                                <span class="fa fa-inr fa-1x img-circle bg-primary"/>
+                            </div>
+                            <div class="col-md-10 mt8 mb8">
+                                <h4>MONEY BACK GUARANTEE</h4>
+                                <p>Free shipping on all orders over $99.</p>
+                            </div>
+                            <div class="feature-box col-md-2 mt16 mb8">
+                                <span class="fa fa-life-ring fa-1x img-circle bg-primary"/>
+                            </div>
+                            <div class="col-md-10 mt8 mb8">
+                                <h4>ONLINE SUPPORT 24/7</h4>
+                                <p>Free shipping on all orders over $99.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="theme_craig_product_item_inherit" inherit_id="website_sale.products_item">
+        <xpath expr="//form/div/section/div[hasclass('product_price')]" position="before">
+            <div class="easy-shortcuts-user-rating">
+                <t t-name="website_rating.rating_stars_static">
+                    <t t-set="val_integer"
+                       t-value="round(get_rating_stat(product)['avg'])"/>
+                    <t t-set="val_decimal" t-value="0"/>
+                    <t t-set="empty_star"
+                       t-value="5 - val_integer"/>
+                    <div class="o_website_rating_static">
+                        <t t-foreach="range(0,val_integer)"
+                           t-as="num">
+                            <i class="fa fa-star"/>
+                        </t>
+                        <t t-if="val_decimal">
+                            <i class="fa fa-star-half-o"/>
+                        </t>
+                        <t t-foreach="range(0,empty_star)" t-as="num">
+                            <i class="fa fa-star-o"/>
+                        </t>
+                    </div>
+                </t>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="theme_craig_website_sale"
+              inherit_id="website_sale.products_item"
+              name="Products item">
+        <xpath expr="//section" position="replace">
+            <section>
+                <div class="after_price"/>
+                <h5>
+                    <strong>
+                        <a itemprop="name"
+                           t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))"
+                           t-field="product.name"/>
+                    </strong>
+                </h5>
+                <div itemprop="offers" itemscope="itemscope"
+                     itemtype="http://schema.org/Offer" class="product_price"
+                     t-if="product.product_variant_ids">
+                    <b>
+                        <t t-if="(compute_currency(product.lst_price) - product.website_price ) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">
+                            <del class="text-danger mr8"
+                                 style="white-space: nowrap;"
+                                 t-esc="compute_currency(product.website_public_price)"
+                                 t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}"/>
+                        </t>
+                        <span t-esc="product.website_price"
+                              t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                        <span itemprop="price" style="display:none;"
+                              t-esc="product.website_price"/>
+                        <span itemprop="priceCurrency" style="display:none;"
+                              t-esc="website.currency_id.name"/>
+                    </b>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+    <!-- Add To Cart -->
+    <template id="website_sale.products_add_to_cart"
+              inherit_id="web_theme_craig_ecommerce.theme_craig_website_sale"
+              active="True" customize_show="True" name="Add to Cart">
+        <xpath expr="//div[hasclass('after_price')]" position="inside">
+            <div class="product_price">
+                <input name="product_id"
+                       t-att-value="product.product_variant_id.id" type="hidden"/>
+                <t t-if="len(product.product_variant_ids) == 1">
+                    <a class="btn btn-default btn-xs a-submit">
+                        <span class="fa fa pe-7s-cart"/>
+                    </a>
+                </t>
+                <t t-if="len(product.product_variant_ids) &gt; 1">
+                    <a class="btn btn-default btn-xs"
+                       t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">
+                        <span class="fa fa pe-7s-cart"/>
+                    </a>
+                </t>
+            </div>
+        </xpath>
+    </template>
+
+
+    <template id="website_sale_wishlist.add_to_wishlist" inherit_id="website_sale.products_item"
+              active="False" customize_show="False" name="Wishlist"/>
+
+    <template id="products_add_to_wish_list_inherit"
+              inherit_id="web_theme_craig_ecommerce.theme_craig_website_sale"
+              customize_show="True" name="Add to WishList">
+        <xpath expr="//div[hasclass('after_price')]" position="inside">
+            <t t-set="in_wish"
+               t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>
+            <a class="btn btn-default btn-xs o_add_wishlist easy-shortcuts-wishlist-shop"
+               t-att-disabled='in_wish or None' title="Add to Wishlist"
+               t-att-data-product-product-id="product.product_variant_id.id"
+               data-action="o_wishlist">
+                <span class="fa fa-heart"/>
+            </a>
+        </xpath>
+    </template>
+
+    <template id="website_sale_comparison.add_to_compare"
+              inherit_id="website_sale.products_item" active="False"
+              name="Comparison List" customize_show="False"/>
+    <template id="website_sale.products_description" customize_show="False" active="False"/>
+    <!-- Product Compare -->
+    <template
+            id="add_to_compare_shortlist"
+            inherit_id="web_theme_craig_ecommerce.theme_craig_website_sale"
+            active="True" customize_show="True" name="Comparison List">
+        <xpath expr="//div[hasclass('after_price')  ]" position="inside">
+            <a class="hidden-xs btn btn-default btn-xs o_add_compare"
+               title="Compare"
+               t-att-data-product-product-id="product.product_variant_id.id"
+               data-action="o_comparelist">
+                <span class="fa fa-exchange"/>
+            </a>
+        </xpath>
+    </template>
+
+</odoo>

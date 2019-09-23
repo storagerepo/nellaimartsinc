@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="product_brand_1" model="product.brand">
+            <field name="name">Shoppe-Fabs</field>
+            <field name="brand_image" type="base64" file="web_theme_craig_ecommerce/static/src/img/brand-logo-01-140x100.png"/>
+        </record>
+
+        <record id="product_brand_2" model="product.brand">
+            <field name="name">Summer</field>
+            <field name="brand_image" type="base64" file="web_theme_craig_ecommerce/static/src/img/brand-logo-02-140x100.png"/>
+        </record>
+
+        <record id="product_brand_3" model="product.brand">
+            <field name="name">Vintage Spoon</field>
+            <field name="brand_image" type="base64" file="web_theme_craig_ecommerce/static/src/img/brand-logo-03-140x100.png"/>
+        </record>
+
+        <record id="product_brand_4" model="product.brand">
+            <field name="name">Mountain</field>
+            <field name="brand_image" type="base64" file="web_theme_craig_ecommerce/static/src/img/brand-logo-04-140x100.png"/>
+        </record>
+
+        <record id="product_brand_5" model="product.brand">
+            <field name="name">Travel</field>
+            <field name="brand_image" type="base64" file="web_theme_craig_ecommerce/static/src/img/brand-logo-05-140x100.png"/>
+        </record>
+
+        <record id="product_brand_6" model="product.brand">
+            <field name="name">Restourant</field>
+            <field name="brand_image" type="base64" file="web_theme_craig_ecommerce/static/src/img/brand-logo-06-140x100.png"/>
+        </record>
+
+        <record id="product_brand_7" model="product.brand">
+            <field name="name">Coffee</field>
+            <field name="brand_image" type="base64" file="web_theme_craig_ecommerce/static/src/img/brand-logo-07-130x100.png"/>
+        </record>
+    </data>
+</odoo>

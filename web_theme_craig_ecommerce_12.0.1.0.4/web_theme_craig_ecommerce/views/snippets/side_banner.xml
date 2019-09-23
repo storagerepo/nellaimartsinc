@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template name="Side Banner" id="s_side_banner">
+        <section class="side_banner ">
+            <div class="container-fluid bg_white">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="craig_side">
+                            <figure>
+                                <img src="/web_theme_craig_ecommerce/static/src/img/left-banner-1-231x460.jpg"
+                                     class="img img-fluid margin-auto"/>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

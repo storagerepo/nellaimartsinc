@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="new_blog_item_inherite" inherit_id="snippet_blog_carousel_73lines.new_blog_item"
+              name="Blog item">
+        <xpath expr="//div[hasclass('oe_blog_image')]" position="inside">
+            <i class="fa fa-search"/>
+        </xpath>
+        <xpath expr="//div[hasclass('oe_blog_image')]" position="attributes">
+            <attribute name="class">oe_blog_image text-center</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('latest-blog-info')]" position="replace">
+            <div class="latest-blog-info">
+                <div class="post-meta">
+                    <span class="entry-date">
+                        <i class="fa fa-calendar"/>
+                        <span t-field="blog.create_date" t-field-options='{"format": "MMM d, yyyy"}'/>
+                    </span>
+                    <span class="entry-comment">
+                        <i class="fa fa-user"/>
+                        <span t-field="blog.author_id"/>
+                    </span>
+                </div>
+                <br/>
+                <div class="post_title">
+                    <a t-att-href="'/blog/%s/post/%s' % (blog.blog_id.id, blog.id)">
+                        <h5 t-field="blog.name"/>
+                    </a>
+                </div>
+                <div class="post-excerpt">
+                    <p t-field="blog.subtitle"/>
+                    <div class="continue_read">
+                        <a t-att-href="'/blog/%s/post/%s' % (blog.blog_id.id, blog.id)"
+                           class="read-more">Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

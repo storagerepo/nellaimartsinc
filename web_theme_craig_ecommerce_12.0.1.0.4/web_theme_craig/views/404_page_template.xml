@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="404-page" model="ir.ui.view">
+        <field name="name">Craig 404-page</field>
+        <field name="type">qweb</field>
+        <field name="key">website.404-page</field>
+        <field name="arch" type="xml">
+            <t name="Craig 404 Page" t-name="website.404-page">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure">
+                        <div class="container mt16 mb16">
+                            <div class="row justify-content-center">
+                                <section class="error">
+                                    <!-- Content -->
+                                    <div class="error__content">
+                                        <div class="error__nav e-nav">
+                                            <img class="img img-fluid"
+                                                 src="/web_theme_craig/static/src/img/404.svg"/>
+                                        </div>
+                                        <div class="public-folder-404 text-center mt16 mb32">
+                                            <h1 class="error_message my-2">File not
+                                                found
+                                            </h1>
+                                            <br/>
+                                            <div class="message_body">Sorry,
+                                                that
+                                                file doesn’t live here anymore.
+                                                It
+                                                might have been moved or made
+                                                private.
+                                            </div>
+                                            <br/>
+                                            <a class="btn btn-info public-folder-link"
+                                               href="/">Get Back To Home
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="404_page" model="website.page">
+        <field name="website_published">True</field>
+        <field name="url">/404-page</field>
+        <field name="view_id" ref="404-page"/>
+    </record>
+
+    <template id="website_craig_404" inherit_id="website.404">
+        <xpath expr="//div[hasclass('oe_structure', 'oe_empty')]" position="replace">
+            <div id="wrap" class="oe_structure oe_empty">
+                <div class="container mt16 mb16">
+                    <div class="row justify-content-center">
+                        <section class="error">
+                            <!-- Content -->
+                            <div class="error__content">
+                                <div class="error__nav e-nav">
+                                    <img class="img img-fluid"
+                                         src="/web_theme_craig/static/src/img/404.svg"/>
+                                </div>
+                                <div class="public-folder-404 text-center mt16 mb32">
+                                    <h1 class="error_message my-2">File not found
+                                    </h1>
+                                    <br/>
+                                    <div class="message_body">Sorry, that file
+                                        doesn’t live here anymore. It
+                                        might have been moved or made private.
+                                    </div>
+                                    <br/>
+                                    <a class="btn btn-info public-folder-link"
+                                       href="/">Get Back To Home
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="theme_craig_assets_frontend" name="Theme craig Ecommerce Frontend Assets"
+              inherit_id="website.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/web_theme_craig_ecommerce/static/src/scss/homepage.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/web_theme_craig_ecommerce/static/src/scss/shop.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/web_theme_craig_ecommerce/static/src/scss/single_shop.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/web_theme_craig_ecommerce/static/src/scss/checkout.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/web_theme_craig_ecommerce/static/src/scss/mid_header.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script src="/web_theme_craig_ecommerce/static/src/js/theme_custome_js.js" type="text/javascript"/>
+        </xpath>
+    </template>
+
+    <template id="theme_craig_snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']" position="inside">
+            <div class="o_panel_body">
+                <t t-snippet="web_theme_craig_ecommerce.s_side_banner"
+                   t-thumbnail="/web_theme_craig_ecommerce/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig_ecommerce.s_testimonial"
+                   t-thumbnail="/web_theme_craig_ecommerce/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig_ecommerce.s_banner_3_image"
+                   t-thumbnail="/web_theme_craig_ecommerce/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig_ecommerce.main_banner"
+                   t-thumbnail="/web_theme_craig_ecommerce/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig_ecommerce.tab_carousel_banner_side_banner"
+                   t-thumbnail="/web_theme_craig_ecommerce/static/src/img/s-icon.png"/>
+                <t t-snippet="web_theme_craig_ecommerce.brand_carousel_and_testimonials"
+                   t-thumbnail="/web_theme_craig_ecommerce/static/src/img/s-icon.png"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

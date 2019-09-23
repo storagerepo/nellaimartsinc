@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="s_our_service" name="Our Service">
+        <section class="s_our_service bg-white"
+                 id="s_our_service">
+            <div class="container">
+                <div class="row mt64 mb32">
+                    <div class="col-md-12">
+                        <div class="section_title">
+                            <h6 class="o_default_snippet_text">
+                                WHAT WE DO
+                            </h6>
+                            <h2 class="o_default_snippet_text">
+                                Our Service
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 mb16 mt16">
+                        <div class="single_service">
+                            <h4>
+                                <a href="#"
+                                   class="o_default_snippet_text">
+                                    Investment Advisor
+                                </a>
+                            </h4>
+                            <p class="o_default_snippet_text">
+                                Ut wisi enim ad minim veniam,
+                                quis nostrud exerci
+                                tation
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 mb16 mt16">
+                        <div class="single_service">
+                            <h4>
+                                <a href="#"
+                                   class="o_default_snippet_text">
+                                    Mortgage Advisor
+                                </a>
+                            </h4>
+                            <p class="o_default_snippet_text">
+                                Ut wisi enim ad minim veniam,
+                                quis nostrud exerci
+                                tation
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 mb16 mt16">
+                        <div class="single_service">
+                            <h4>
+                                <a href="#"
+                                   class="o_default_snippet_text">
+                                    Mortgage Advisor
+                                </a>
+                            </h4>
+                            <p class="o_default_snippet_text">
+                                Ut wisi enim ad minim veniam,
+                                quis nostrud exerci
+                                tation
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 mb16 mt16">
+                        <div class="single_service">
+                            <h4>
+                                <a href="#"
+                                   class="o_default_snippet_text">
+                                    Saving Money
+                                </a>
+                            </h4>
+                            <p class="o_default_snippet_text">
+                                Ut wisi enim ad minim veniam,
+                                quis nostrud exerci
+                                tation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

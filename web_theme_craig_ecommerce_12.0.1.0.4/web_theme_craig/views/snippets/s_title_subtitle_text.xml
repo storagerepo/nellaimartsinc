@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template name="Title SubTilte Text" id="s_title_subtitle_text">
+        <section id="s_title_subtitle_text" class="bg-white">
+            <div class="container">
+                <div class="row mt64 mb32">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="slz-shortcode sc_main_title text-l has-image">
+                            <div class="slz-main-title">
+                                <div class="icon-wrapper">
+                                    <i class="slz-icon fa fa-pagelines"/>
+                                </div>
+                                <h2 class="my-2 title o_default_snippet_text">WELCOME TO GRASS COMPANY</h2>
+                                <div class="subtitle">
+                                    <span class="subtitle-inner o_default_snippet_text">Some Word About Us</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text_column content_element mt32">
+                            <div class="wrapper">
+                                <p class="o_default_snippet_text">Have you ever finally just
+                                    gave in to the temptation and read your horoscope line in
+                                    the newspaper on Sunday morning? Sure, we all have. For most
+                                    of us, it’s a curiosity, an amusement to see what they say
+                                    our day will be like based on the sign of the zodiac that we
+                                    were born under.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,94 @@
+#s_testimonial_faq {
+  @media only screen and (max-width: 767px) {
+    > .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .col-md-6 {
+    padding: 0;
+  }
+
+  .faq {
+    h2 {
+      color: $info;
+    }
+
+    padding-right: 5% !important;
+    padding-bottom: 100px !important;
+    padding-left: 5% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding-top: 35px;
+
+    h4.card-header > a > i {
+      float: right;
+    }
+
+    .card {
+      border-radius: 0;
+
+      .collapsed .fa-plus:before {
+        content: "\f067";
+      }
+
+      .fa-plus:before {
+        content: "\f068";
+      }
+    }
+
+    div.icon-wrapper {
+      i {
+        color: $success;
+      }
+
+      &:after {
+        content: '';
+        top: 50px;
+        margin-left: 10px;
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: $success;
+        bottom: 0;
+      }
+    }
+  }
+
+  .testimonial {
+    padding-right: 5% !important;
+    padding-bottom: 100px !important;
+    padding-left: 5% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding-top: 35px;
+    color: #fff;
+
+    div.icon-wrapper {
+      i {
+        color: $success;
+      }
+
+      &:after {
+        content: '';
+        top: 50px;
+        margin-left: 10px;
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: $success;
+        bottom: 0;
+      }
+    }
+
+    div.subtitle > span {
+      font-size: 16px;
+    }
+
+  }
+}

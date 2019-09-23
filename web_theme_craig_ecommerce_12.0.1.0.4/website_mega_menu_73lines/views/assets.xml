@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Part of Odoo Module Developed by 73lines
+    See LICENSE file for full copyright and licensing details.
+-->
+<odoo>
+
+    <!-- @todo Check Style Issue for Carousel in MegaMenu -->
+    <!-- CSS, Scss & JS Assets -->
+    <template id="megamenu_assets_frontend" name="MegaMenu Frontend Assets" inherit_id="website.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/website_mega_menu_73lines/static/src/scss/yamm.scss"
+                  type="text/scss" rel="stylesheet" />
+        </xpath>
+         <xpath expr="//script[last()]" position="after">
+             <script type="text/javascript" src="/website_mega_menu_73lines/static/src/js/navbar_frontend.js"/>
+         </xpath>
+    </template>
+</odoo>
