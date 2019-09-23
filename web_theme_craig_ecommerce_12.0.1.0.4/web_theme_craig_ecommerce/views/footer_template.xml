@@ -3,7 +3,7 @@
     <data>
         <template id="website.footer_custom" inherit_id="website.layout" name="Footer">
             <xpath expr="//div[@id='footer']" position="replace">
-                <div class="oe_structure" id="footer">
+                <div class="oe_structure" id="footer" style="margin-top: 30px;">
                     <section class="s_navbar_menu_mega">
                         <div class="container">
                             <div class="row footer-top-col-4 footer-1 mb32">
@@ -20,9 +20,9 @@
                                     </div>
                                 </div>
                                 <div class="sidebar col-md-3 col-sm-6">
-                                    <div class="payment">
-                                        <h4>Accepted Payment</h4>
-                                    </div>
+                                    <h4 class="widget-title">
+                                        <span>Accepted Payment</span>
+                                    </h4>
                                 </div>
 
                                 <div class="sidebar col-md-3 col-sm-6">
@@ -33,19 +33,19 @@
                                         <div class="textwidget">
                                             <ul class="widget-contact-info">
                                                 <li>
-                                                    <i class="fa fa-map-marker"/>
+                                                    <i class="fa fa-map-marker text-beta"/>
                                                     <span t-field="res_company.country_id"/>
                                                 </li>
                                                 <li>
-                                                    <i class="fa fa-phone"/>
+                                                    <i class="fa fa-phone text-beta"/>
                                                     <span t-field="res_company.phone"/>
                                                 </li>
                                                 <li>
-                                                    <i class="fa fa-paper-plane"/>
+                                                    <i class="fa fa-paper-plane text-beta"/>
                                                     <span t-field="res_company.email"/>
                                                 </li>
                                                 <li>
-                                                    <i class="fa fa-clock-o"/>
+                                                    <i class="fa fa-clock-o text-beta"/>
                                                     <span>Mon - Sat: 9:00 - 18:00
                                                     </span>
                                                 </li>
