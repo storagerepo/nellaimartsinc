@@ -116,10 +116,10 @@ section.s_banner_3_image div.col-md-4 div.col-md-12.col-sm-12 {
     width: 240px;
     a {
       color: #333;
-      //text-overflow: ellipsis;
+      text-overflow: ellipsis !important;
       overflow: hidden;
       width: 70%;
-
+      display:inline !important;
       &:hover {
         color: $info;
       }
@@ -382,7 +382,7 @@ section.s_banner_3_image div.col-md-4 div.col-md-12.col-sm-12 {
         display: block;
         font-weight: normal;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: ellipsis !important;
         white-space: nowrap;
         color: #333;
 
