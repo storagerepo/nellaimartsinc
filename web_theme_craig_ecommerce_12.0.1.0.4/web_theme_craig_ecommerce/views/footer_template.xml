@@ -3,9 +3,9 @@
     <data>
         <template id="website.footer_custom" inherit_id="website.layout" name="Footer">
             <xpath expr="//div[@id='footer']" position="replace">
-                <div class="oe_structure" id="footer" style="margin-top: 30px;">
+                <div class="oe_structure" id="footer">
                     <section class="s_navbar_menu_mega">
-                        <div class="container">
+                        <div class="container mt-5">
                             <div class="row footer-top-col-4 footer-1 mb32">
                                 <div class="sidebar col-md-3 col-sm-6">
                                     <h4 class="widget-title">
