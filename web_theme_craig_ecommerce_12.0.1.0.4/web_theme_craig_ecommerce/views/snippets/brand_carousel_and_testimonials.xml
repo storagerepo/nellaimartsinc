@@ -3,7 +3,7 @@
     <template id="brand_carousel_and_testimonials"
               name="Brand Carousel And Testimonials">
         <section class="mt8 mb8">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div id="left_side_block"
                          class="col-lg-3 col-md-12 order-1">

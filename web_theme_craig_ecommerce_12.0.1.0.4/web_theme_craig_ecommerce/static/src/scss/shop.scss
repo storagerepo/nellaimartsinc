@@ -375,6 +375,15 @@ div.modal-body.col-md-12 > div:nth-child(2) > div.col-md-12.mt16.text-left > h2 
   }
 }
 
+@media (width:1024px) {
+    #grid_list {
+        div.after_price {
+          text-align: left !important;
+          visibility: visible !important;
+        }
+  }
+}
+
 @media (max-width: 767px) {
   #products_grid {
     margin-top: 8px;
