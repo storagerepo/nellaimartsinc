@@ -10,7 +10,7 @@
                    'color variations, 12 font options, 2 '
                    'Layouts and 8 Patterns.',
     'category': 'Website',
-    'version': '12.0.1.0.4',
+    'version': '12.0.1.0.5',
     'summary': 'Multi Purpose Ecommerce,Responsive '
                'and Fully Customizable Odoo Theme',
     'author': '73Lines',
