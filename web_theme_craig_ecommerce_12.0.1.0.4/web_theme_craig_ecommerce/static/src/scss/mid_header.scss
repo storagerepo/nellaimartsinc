@@ -60,8 +60,7 @@
 }
 
 .cart_contents {
-  background: $secondary;
-//   background: #ffba00;
+  background: $primary;
   border-radius: 0 0 30px 30px;
   -moz-border-radius: 0 0 30px 30px;
   -webkit-border-radius: 0 0 30px 30px;
@@ -70,7 +69,7 @@
   padding: 10px 5px 0 10px;
   position: absolute;
   z-index: 1;
-  top: -65px;
+  top: -60px;
   width: auto;
   right:0;
 }
@@ -97,6 +96,10 @@
   }
 }
 
+  #product_pager_top > form,#product_pager_top > ul{
+        margin:16px 0 !important;
+   }
+
 @media (max-width:767px) {
     .mid_header_shopping_cart sup {
         background: transparent !important;
@@ -104,6 +107,10 @@
 
     #header_my_cart{
         top:0;
+    }
+
+    #top_menu{
+        text-align:left !important;
     }
 }
 
