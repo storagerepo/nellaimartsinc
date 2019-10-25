@@ -2,7 +2,7 @@
 <templates id="point_of_sale.template" xml:space="preserve">
     <t t-extend="Chrome">
         <t t-jquery='.pos-branding' t-operation='replace'>
-        	 <div class="pos-branding">
+             <div class="pos-branding">
              <img src='/web/binary/company_logo' style="width: 10%;padding: 2px 8px 0px 13px;float: left;"/>
              <span class="placeholder-UsernameWidget" style="float: left;padding-top: 19px;color: #fff;"></span></div>
         </t>
@@ -169,7 +169,8 @@
                         </td></tr>
                 </table><br/>
                 <div style="text-align:center">
-                    Thank you for shopping with us!
+                    Thank you for shopping with us!<br/>
+                    *  Visit Again  *
                 </div>
             </div>
         </t>
