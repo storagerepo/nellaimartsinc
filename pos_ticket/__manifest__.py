@@ -20,7 +20,7 @@
 {
     'name': 'Company Logo In POS Receipt',
     'summary': """Add Company Logo ,Info & Customer name to POS Ticket""",
-    'version': '12.0.1.1',
+    'version': '12.0.1.0',
     'description': """Add Company Logo , Info & Customer name to POS Ticket""",
     'author': 'Cybrosys Techno Solutions',
     'company': 'Cybrosys Techno Solutions',
@@ -30,6 +30,7 @@
     'license': 'AGPL-3',
     'data': [],
     'qweb': ['static/src/xml/pos_ticket_view.xml'],
+    'js':['static/src/js/main.js'],
     'images': ['static/description/banner.jpg'],
     'demo': [],
     'installable': True,
