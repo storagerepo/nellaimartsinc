@@ -1,0 +1,8 @@
+<openerp>
+  <data>
+  	<template id="assets_pos" name="pos_ticket_custom" inherit_id="point_of_sale.assets">
+      <xpath expr="." position="inside">
+        <script type="text/javascript" src="/pos_ticket/static/src/js/main.js"></script>
+      </xpath>
+    </template>
+</data></openerp>

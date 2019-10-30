@@ -20,6 +20,7 @@
                         <t t-if="widget.pos.company.phone">
                             7424 Sawmill Road, Columbus   <t t-esc="widget.pos.company.phone || ''"/>
                         </t>
+                        <t t-esc="widget.pos.company.street"></t>
                         <t t-if="widget.pos.company.email">
                         <div style="width:100%; text-align: center;"><t t-esc="widget.pos.company.email"/></div>
                     </t>
