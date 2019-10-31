@@ -18,7 +18,6 @@ for(var i=0; i<models.length; i++){
 
         amount = this.format_currency(amount,precision);
         amount=amount.replace(' ','');
-        console.log(amount);
         return amount;
     }
 })

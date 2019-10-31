@@ -76,7 +76,7 @@
                         <td style="text-align: center;">
                             <t t-esc="orderline.get_quantity_str_with_unit()"/>
                         </td>
-                        <td>
+                        <td style='text-align:right'>
                             <t t-set="a" t-value="orderline.quantityStr"></t>
                             <t t-set="b" t-value="orderline.get_display_price()"></t>
                             <t t-set="c" t-value="b/a"></t>
