@@ -19,7 +19,7 @@ class CustomDeemPortal(CustomerPortal):
     
         return CustomerPortal.account(self,redirect=None,**post)
     
-class WebsiteWishlistCustom(WebsiteSaleWishlist)    
+class WebsiteWishlistCustom(WebsiteSaleWishlist):
     @http.route(['/shop/wishlist'], type='http', auth="public", website=True)
     def get_wishlist(self, count=False, **kw):
         values = request.env['product.wishlist'].with_context(display_default_code=False).current()
