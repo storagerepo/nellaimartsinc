@@ -3,6 +3,8 @@ from odoo.addons.website_sale.controllers.main import WebsiteSale
 from odoo.addons.portal.controllers.portal import CustomerPortal
 from odoo.addons.website_sale_wishlist.controllers.main import WebsiteSaleWishlist
 from odoo import http
+from odoo.http import request
+
 
 class SaleController(WebsiteSale):
     @http.route(auth='user')
