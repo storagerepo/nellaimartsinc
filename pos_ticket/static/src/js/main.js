@@ -29,7 +29,7 @@ odoo.define('pos_keyboard_shortcut',function(require){
     var module = require('point_of_sale.screens');
     module.extend({
         
-    document.addEventListener('keydown', function(event) {
+    $(document).addEventListener('keydown', function(event) {
     if(event.keyCode == 8) {
         self.gui.back();
     }
