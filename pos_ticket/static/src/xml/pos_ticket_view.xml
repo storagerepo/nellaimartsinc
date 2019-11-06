@@ -3,7 +3,7 @@
     <t t-extend="Chrome">
         <t t-jquery='.pos-branding' t-operation='replace'>
              <div class="pos-branding">
-             <img src='/web/binary/company_logo' style="padding: 2px 8px 0px 13px;float: left;"/>
+             <img src='/web/binary/company_logo' style="width:30%;padding: 5px 8px 0px 13px;float: left;"/>
              <span class="placeholder-UsernameWidget" style="float: left;padding-top: 19px;color: #fff;"></span></div>
         </t>
     </t>
@@ -17,7 +17,7 @@
                 <div>
                     <div style="text-align: center !important"> 
                         <t t-if="widget.pos.company.phone">
-                         <t t-esc="widget.pos.company.street"></t>,<t t-esc="widget.pos.company.city"></t> 
+                         <t t-esc="widget.pos.company.street"></t>, <t t-esc="widget.pos.company.city"></t> 
                             <t t-esc="widget.pos.company.phone || ''"/>
                         </t>
                         <t t-if="widget.pos.company.email">
@@ -76,11 +76,11 @@
                         <td style="text-align: center;">
                             <t t-esc="orderline.get_quantity_str_with_unit()"/>
                         </td>
-                        <td>
+                        <td style='text-align:right'>
                             <t t-set="a" t-value="orderline.quantityStr"></t>
                             <t t-set="b" t-value="orderline.get_display_price()"></t>
                             <t t-set="c" t-value="b/a"></t>
-                            <t t-esc="c"/>
+                            &#36;<t t-esc="c.toFixed(2)"/>
                         </td>
                         <td style='text-align:right'>
                             <t t-esc="widget.format_currency_custom(orderline.get_display_price())"/>
