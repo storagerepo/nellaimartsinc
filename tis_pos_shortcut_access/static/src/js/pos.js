@@ -117,6 +117,9 @@ var _t = core._t;
 						}else if(event.which == 48){
 							$(".leftpane .subwindow-container-fix .number-char:contains('0')").click();
 						}
+						else if(event.which == 46){
+                            $(".leftpane .subwindow-container-fix .number-char:contains('.')").click();
+                        }
 					}
 					if($(".searchbox input").is(":focus")){
 						if(event.which == 13){
