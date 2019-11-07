@@ -1,6 +1,7 @@
 
 from odoo.addons.website_sale.controllers.main import WebsiteSale
-import odoo.addons.website_sale.controllers.main
+import odoo.addons.website_sale.controllers.main 
+from odoo.addons.website_sale.controllers.main import PPG
 from odoo.addons.portal.controllers.portal import CustomerPortal
 from odoo.addons.website_sale_wishlist.controllers.main import WebsiteSaleWishlist
 from odoo.addons.website_sale.controllers.main import TableCompute
@@ -14,9 +15,9 @@ class SaleController(WebsiteSale):
     def checkout(self, **post):
          #the user is logged in to checkout
          return super(SaleController, self).checkout(**post)
-#     def shop(self, page=0, category=None, search='', ppg=False, **post):
-#         odoo.addons.website_sale.controllers.main.PPG=15;
-#         return WebsiteSale.shop(self, page=0, category=None, search='', ppg=False, **post)
+    def shop(self, page=0, category=None, search='', ppg=False, **post):
+        PPG=15;
+        return WebsiteSale.shop(self, page=0, category=None, search='', ppg=False, **post)
     
 class CustomDeemPortal(CustomerPortal):
     @http.route(auth='user')

@@ -26,9 +26,6 @@ for(var i=0; i<models.length; i++){
 
 odoo.define('pos_keyboard_shortcut',function(require){
     "user strict"
-    var module = require('point_of_sale.screens');
-    module.extend({
-        
     $(document).addEventListener('keydown', function(event) {
     if(event.keyCode == 8) {
         self.gui.back();
@@ -36,8 +33,6 @@ odoo.define('pos_keyboard_shortcut',function(require){
     else if(event.keyCode == 80) {
      $(".pay").click();
     }
-});
-    
     })   
 })
 
