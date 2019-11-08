@@ -4,7 +4,7 @@ from odoo.addons.portal.controllers.portal import CustomerPortal
 from odoo.addons.website_sale_wishlist.controllers.main import WebsiteSaleWishlist
 from odoo import http
 from odoo.http import request
-
+import json
 
 class SaleController(WebsiteSale):
     @http.route(auth='user')
@@ -16,8 +16,8 @@ class CustomDeemPortal(CustomerPortal):
     @http.route(auth='user')
     def account(self, redirect=None, **post):
         
-        CustomerPortal.MANDATORY_BILLING_FIELDS = ["name", "phone", "email", "street", "city", "country_id","zipcode", "state_id"]
-        CustomerPortal.OPTIONAL_BILLING_FIELDS = ["vat", "company_name"]
+        CustomerPortal.MANDATORY_BILLING_FIELDS = ["name", "phone", "email", "street", "city", "country_id","zipcode", "state_id",]
+        CustomerPortal.OPTIONAL_BILLING_FIELDS = ["vat", "company_name","street2"]
     
         return CustomerPortal.account(self,redirect=None,**post)
     
