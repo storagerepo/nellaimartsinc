@@ -15,6 +15,7 @@ odoo.define('product_carousel_73lines.carousel_frontend', function(require) {
     var website_sale_utils = require('website_sale.utils');
     var sAnimation = require('website.content.snippets.animation');
     var ajax = require('web.ajax');
+//     var Animation= require('wishlist_animation');
 
     sAnimation.registry.js_get_objects.include({
         events: {

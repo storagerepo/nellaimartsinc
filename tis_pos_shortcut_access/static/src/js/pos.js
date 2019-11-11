@@ -58,6 +58,7 @@ var _t = core._t;
 			});
 
 			 $.key(config.next_order_sc,function(){
+                 console.log("next clicked");
 			 	$(".next").click();
 			 });
 			$.key("up",function(){
@@ -89,6 +90,7 @@ var _t = core._t;
 			$("body").keypress(function( event ) {
 				if(self.gui.get_current_screen() == 'products'){
 					if(! $(".searchbox input").is(":focus")){
+                        console.log(event.which);
 						if(event.which == 49){
 							$(".leftpane .subwindow-container-fix .number-char:contains('1')").click();
 						}
@@ -117,7 +119,7 @@ var _t = core._t;
 						}else if(event.which == 48){
 							$(".leftpane .subwindow-container-fix .number-char:contains('0')").click();
 						}
-                        else if(event.which == 110){
+                        else if(event.which == 46){
                             $(".leftpane .subwindow-container-fix .number-char:contains('.')").click();
                         }
 					}

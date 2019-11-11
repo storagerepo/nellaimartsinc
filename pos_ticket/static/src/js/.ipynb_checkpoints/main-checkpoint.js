@@ -2,6 +2,7 @@ odoo.define('pos_custom_model', function (require) {
 
 var module = require('point_of_sale.models');
 var PosBaseWidget = require('point_of_sale.BaseWidget');
+var posDb=require('point_of_sale.DB');
 var models = module.PosModel.prototype.models;
 for(var i=0; i<models.length; i++){
     var model=models[i];
@@ -22,17 +23,17 @@ for(var i=0; i<models.length; i++){
         return amount;
     }
 })
+   
+  //To change product limit in pos session
+    posDbCustom=posDb.include({
+        init: function()
+    {
+        this.limit=250;
+        this._super();
+    }
+        
+        });
+    
 });
 
-odoo.define('pos_keyboard_shortcut',function(require){
-    "user strict"
-    $(document).addEventListener('keydown', function(event) {
-    if(event.keyCode == 8) {
-        self.gui.back();
-    }
-    else if(event.keyCode == 80) {
-     $(".pay").click();
-    }
-    })   
-})
 
