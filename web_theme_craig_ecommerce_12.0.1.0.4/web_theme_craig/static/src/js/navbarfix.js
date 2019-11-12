@@ -8,15 +8,16 @@ $(document).ready(function () {
         cursorborderradius: "5px", // border radius in pixel for cursor
         zindex: "5000",
     });
+    $("#back-top, #cart-button").hide();
 });
 
-$("#back-top").hide();
+// $("#back-top, #cart-button").hide();
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            $('#back-top').fadeIn();
+            $('#back-top, #cart-button').fadeIn();
         } else {
-            $('#back-top').fadeOut();
+            $('#back-top, #cart-button').fadeOut();
         }
     });
     $('#back-top a').click(function () {
