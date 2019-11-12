@@ -9,7 +9,7 @@ from odoo.addons.website_sale.controllers.main import WebsiteSale
 from odoo.addons.website_sale.controllers.main import TableCompute
 from odoo.addons.http_routing.models.ir_http import slug
 
-PPG = 20  # Products Per Page
+PPG = 15  # Products Per Page
 PPR = 4  # Products Per Row
 
 
@@ -59,11 +59,7 @@ class WebsiteSaleExt(WebsiteSale):
 
         if search:
             for srch in search.split(" "):
-                domain += [
-                    '|', '|', '|', ('name', 'ilike', srch),
-                    ('description', 'ilike', srch),
-                    ('description_sale', 'ilike', srch),
-                    ('product_variant_ids.default_code', 'ilike', srch)]
+                domain += [('name', 'ilike', srch)]
 
         if category:
             domain += [('public_categ_ids', 'child_of', int(category))]
