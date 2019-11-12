@@ -8,14 +8,14 @@ $(document).ready(function () {
         cursorborderradius: "5px", // border radius in pixel for cursor
         zindex: "5000",
     });
-    $("#back-top ","#cart-button-top").hide();
+    $('#back-top, #cart-button-top').hide();
 });
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            $('#back-top',"#cart-button-top").fadeIn();
+            $('#back-top, #cart-button-top').fadeIn();
         } else {
-            $('#back-top',"#cart-button-top").fadeOut();
+            $('#back-top, #cart-button-top').fadeOut();
         }
     });
     $('#back-top a').click(function () {
