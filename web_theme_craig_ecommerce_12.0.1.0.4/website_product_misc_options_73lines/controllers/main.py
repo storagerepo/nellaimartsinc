@@ -54,7 +54,7 @@ class WebsiteProductLimit(http.Controller):
 class WebsiteSaleExt(WebsiteSale):
 
     def _get_search_domain_ext(self, search, category, attrib_values,
-                               tag_values, brand_values, price_min, price_max):
+                               tag_values, brand_values):
         domain = request.website.sale_product_domain()
 
         if search:
@@ -86,9 +86,9 @@ class WebsiteSaleExt(WebsiteSale):
         if brand_values:
             domain += [('brand_id', 'in', brand_values)]
 
-        if price_min or price_max:
-            domain += [('list_price', '>=', price_min),
-                       ('list_price', '<=', price_max)]
+        # if price_min or price_max:
+        #     domain += [('list_price', '>=', price_min),
+        #                ('list_price', '<=', price_max)]
 
         return domain
 
@@ -150,15 +150,14 @@ class WebsiteSaleExt(WebsiteSale):
                 price_max = price_min = price_min_range = price_max_range = 0.0
         else:
             price_max = price_min = price_min_range = price_max_range = 0.0
-
+        
         domain = self._get_search_domain_ext(search, category, attrib_values,
-                                             list(tag_set), list(brand_set),
-                                             price_min, price_max)
+                                             list(tag_set), list(brand_set)
+                                             )
         keep = QueryURL('/shop', category=category and int(category),
                         search=search, attrib=attrib_list,
                         order=post.get('order'), brands=brand_list,
-                        tags=tag_list, price_min=price_min,
-                        price_max=price_max)
+                        tags=tag_list)
 
         url = "/shop"
         if category:
@@ -212,9 +211,7 @@ class WebsiteSaleExt(WebsiteSale):
             'attrib_values': attrib_values, 'tag_values': tag_values,
             'brand_values': brand_values, 'brand_set': brand_set,
             'attrib_set': attrib_set, 'tag_set': tag_set, 'limits': limits,
-            'PPG': PPG, 'price_min_range': price_min_range,
-            'price_max_range': price_max_range, 'price_min': price_min,
-            'price_max': price_max, 'keep': keep,
+            'PPG': PPG, 'keep': keep,
             'categ_products': categ_products,
         })
         return res
