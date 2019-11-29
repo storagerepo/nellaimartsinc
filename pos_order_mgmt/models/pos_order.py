@@ -90,10 +90,11 @@ class PosOrder(models.Model):
         session_obj = self.env['pos.session']
         config = session_obj.browse(pos_session_id).config_id
         condition = self._prepare_filter_for_pos(pos_session_id)
-        if not query:
+        #if not query:
             # Search only this POS orders
-            condition += [('config_id', '=', config.id)]
-        else:
+            #condition += [('config_id', '=', config.id)]
+        #else:
+        if query:
             # Search globally by criteria
             condition += self._prepare_filter_query_for_pos(
                 pos_session_id, query)

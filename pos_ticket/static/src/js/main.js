@@ -39,6 +39,9 @@ odoo.define('pos_custom_model', function (require) {
             this.gui.show_popup('error',_t('Customer Name or Email ID or Phone Number is required'));
             return;
         }
+        if(fields.name && fields.lastName){
+            fields.name+=" "+fields.lastName;
+        }
         if(!fields.name){
             fields.name="Unknown"
         }
@@ -80,6 +83,20 @@ odoo.define('pos_custom_model', function (require) {
                 contents.on('click','.button.save',function(){ self.save_client_details(partner); });
             });
     },
+    edit_client_details: function(partner) {
+        partner_name=partner.name.replace(/  +/g, ' ').split(' ');
+        if(partner_name.length > 1){
+            partner.name=partner_name[0];
+            partner.lastName='';
+            if(partner_name.length>1)
+            for(var i=1;i<partner_name.length;i++)
+                {
+                    partner.lastName=partner.lastName+" "+partner_name[i];
+                }
+        }
+        this.display_client_details('edit',partner);
+    },
+
     });
 
     //To change product limit in pos session

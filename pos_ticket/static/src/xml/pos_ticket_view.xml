@@ -186,4 +186,10 @@
             </div>
         </t>
     </t>
+    <t t-extend="ClientDetailsEdit">
+        <t t-jquery=".detail.client-name" t-operation="replace">
+            <input class='detail client-name' name='name' onkeydown="if (event.which==32) { return false }" t-att-value='partner.name' placeholder='Name'></input>
+            <input class='detail client-name' name='lastName' t-att-value='partner.lastName' placeholder='Last Name'></input>
+        </t>
+    </t>
 </templates>
