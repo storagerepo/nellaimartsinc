@@ -2,6 +2,18 @@
 <odoo>
     <template id="cardconnect_template_modal" name="Cardconnect">
     
+        <script>
+            $(document).ready(function(){
+            $("#myModal").modal({
+                backdrop: 'static',
+                keyboard: false
+              });
+              $('.modalClose').click(function(){
+                location.reload();
+              })
+            })
+            
+        </script>
         <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -10,7 +22,7 @@
                 <div class="display-td">
                     <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png"/>
                 </div>
-                <button type="button" class="close" data-dismiss="modal">&amp;times;</button>
+                <button type="button" class="close modalClose" data-dismiss="modal">&amp;times;</button>
             </div>
             <div class="modal-body cardconnect-checkout-div">
                     <form id="cardconnect-checkout" method="post" target="_self" action="/payment/cardconnect">
@@ -35,27 +47,28 @@
                             </div>
                             <div class="panel-body">
                                     <div class="col-sm-12">
-                                        <div class="col-xs-12">
-                                            <label for="validationCustomUsername">CardNumber</label>
-                                                <div class="input-group">
+                                        <div class="form-group col-xs-12">
+                                            <label for="validationCustomUsername">CARD NUMBER</label>
+                                                <div class="input-group form-group">
                                                     <div class="input-group-prepend">
                                                     <span class="input-group-text" id="inputGroupPrepend"><i class="fa fa-credit-card" /></span>
                                                     </div>
-                                                    <input type="text" class="form-control" name="cardnumber" id="validationCustomUsername" placeholder="Card Number" aria-describedby="inputGroupPrepend" required="required"/>
-                                                    <div class="invalid-feedback">
+                                                    <input type="text" class="form-control" name="cardnumber" id="cc_number" placeholder="Card Number" aria-describedby="inputGroupPrepend" required="required"/>
+<!--                                                     <div class="invalid-feedback">
                                                        Please add Valid CardNumber.
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 display-inline">
                                         <div class="form-group col-md-6">
-                                            <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
-                                            <input type="tel" class="form-control" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required="required" />
+<!--                                             <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label> -->
+                                           <label for="cardExpiry">EXPIRATION DATE</label>
+                                            <input type="tel" class="form-control" name="cardExpiry" maxlength="7" id="cc_expiry" placeholder="MM / YY" autocomplete="cc-exp" required="required" />
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label for="cardCVC">CV CODE</label>
-                                                <input type="tel" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required="required" />
+                                            <label for="cardCVC">CVC</label>
+                                                <input type="password" class="form-control" name="cardCVC" id="cc_cvc" placeholder="CVC" autocomplete="cc-csc" required="required" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
@@ -72,8 +85,11 @@
                         </div>
                         </form>
             </div>
+        
+<!--         <script src="/payment/static/lib/jquery.payment.js"/> -->
+        <script src="/payment/static/src/js/payment_portal.js"/>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default modalClose" data-dismiss="modal">Close</button>
             </div>
             </div>
 

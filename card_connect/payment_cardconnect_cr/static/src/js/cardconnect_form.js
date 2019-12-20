@@ -27,8 +27,9 @@ odoo.define('payment_cardconnect_cr.payment_cardconnect_cr', function(require) {
             // now we check if the user has clicked on stripe radio button and wants to pay via the checkout form
             if (provider != "cardconnect" || is_form_payment !== true) {
                 return;
-            }
-
+            } 
+            //disabling button coz 2 modals are opened on double-click
+            $(this).attr("disabled", true);
             var temp = 0;
             var loader = "<div class='cardconnect_payment_loder' style='display:none;'></div>";
             $('.o_payment_form').after(loader);

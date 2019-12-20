@@ -4,7 +4,7 @@
 
 {
     'name': "CardConnect Payment Acquirer",
-    'version': '1.0',
+    'version': '1.1',
     'summary': """
         Integrate Cardconnect Payment with Odoo. With this module, your customers can pay for their online orders with Cardconnect payment gateway on Odoo website.
     """,
