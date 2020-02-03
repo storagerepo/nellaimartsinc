@@ -3,9 +3,7 @@ from odoo.addons.website_sale.controllers.main import WebsiteSale
 from odoo.addons.portal.controllers.portal import CustomerPortal
 from odoo.addons.website.controllers.main import Website
 from odoo.addons.website_sale_wishlist.controllers.main import WebsiteSaleWishlist
-from odoo.addons.point_of_sale.models.pos_config import PosConfig
-from odoo.addons.point_of_sale.models.pos_session import PosSession
-from odoo import api, http
+from odoo import api, http , models
 from odoo.http import request
 import json
 
@@ -73,30 +71,3 @@ class WebsiteWishlistCustom(WebsiteSaleWishlist):
 
         return request.render("website_sale_wishlist.product_wishlist", dict(wishes=values))
     
-class PosCustomConfig(PosConfig):
-    # Methods to open the POS
-    @api.multi
-    def open_ui(self):
-        """ open the pos interface """
-        self.ensure_one()
-        # check all constraints, raises if any is not met
-        self._validate_fields(self._fields)
-        return {
-            'type': 'ir.actions.act_url',
-            'url':   '/pos/web/?iotbox=1',
-            'target': 'self',
-        }
-        
-class posCustomSession(PosSession):
-    @api.multi
-    def open_frontend_cb(self):
-        if not self.ids:
-            return {}
-        for session in self.filtered(lambda s: s.user_id.id != self.env.uid):
-            raise UserError(_("You cannot use the session of another user. This session is owned by %s. "
-                              "Please first close this one to use this point of sale.") % session.user_id.name)
-        return {
-            'type': 'ir.actions.act_url',
-            'target': 'self',
-            'url':   '/pos/web/?iotbox=1',
-        }
