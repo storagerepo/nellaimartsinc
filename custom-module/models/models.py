@@ -31,9 +31,9 @@ class PosCustomConfig(models.Model):
 class productCustom(models.Model):
     _inherit = 'product.product'
     
-    #product_company = fields.Many2one('res.company', 'Company', related='product_tmpl_id.company_id', store=True)
+    product_company = fields.Many2one('res.company', 'Company', related='product_tmpl_id.company_id', store=True)
 
-    #_sql_constraints = [ ('barcode_uniq', 'unique(product_company, barcode)', ("Barcode should be unique by company!")), ]
+    _sql_constraints = [ ('barcode_uniq', 'unique(product_company, barcode)', ("Barcode should be unique by company!")), ]
     
     @api.model
     def _auto_init(self):
