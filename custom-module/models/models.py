@@ -27,3 +27,16 @@ class PosCustomConfig(models.Model):
             'url':   '/pos/web/?iotbox=1',
             'target': 'self',
         }
+
+class productCustom(models.Model):
+    _inherit = 'product.product'
+    
+    product_company = fields.Many2one('res.company', 'Company', related='product_tmpl_id.company_id', store=True)
+
+    _sql_constraints = [ ('barcode_uniq', 'unique(product_company, barcode)', ("Barcode should be unique by company!")), ]
+    
+    @api.model
+    def _auto_init(self):
+     res = super(productCustom, self)._auto_init()
+     self._sql_constraints = [('barcode_uniq', 'unique(company_id, barcode)', ("Barcode should be unique by company!"))]
+     return res
