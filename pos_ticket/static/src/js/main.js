@@ -104,7 +104,59 @@ odoo.define('pos_custom_model', function (require) {
         init: function () {
             this.limit = 250;
             this._super();
+        },
+        
+        _product_search_string: function(product){
+        var str = product.display_name;
+        if (product.barcode) {
+            str += '|' + product.barcode;
         }
+        if (product.default_code) {
+            str += '|' + product.default_code;
+        }
+//         if (product.description) {
+//             str += '|' + product.description;
+//         }
+//         if (product.description_sale) {
+//             str += '|' + product.description_sale;
+//         }
+        str  = product.id + ':' + str.replace(/:/g,'') + '\n';
+        return str;
+    },
+        
+        search_product_in_category: function(category_id, query){
+        try {
+            query = query.replace(/[\[\]\(\)\+\*\?\.\-\!\&\^\$\|\~\_\{\}\:\,\\\/]/g,'.');
+            query = query.replace(/ /g,'.+');
+            var re = RegExp("([0-9]+):.*?"+query,"gi");
+            var temporaryArray=[];
+        }catch(e){
+            return [];
+        }
+        var results = [];
+        for(var i = 0; i < this.limit; i++){
+            var r = re.exec(this.category_search_string[category_id]);
+            if(r){
+                temporaryArray.push(r);
+               
+            }else{
+                break;
+            }
+        }
+        //Temporary array to sort
+        temporaryArray.sort(function(a,b) {
+        return a[0].toLowerCase().indexOf(query) - b[0].toLowerCase().indexOf(query);
+        })
+            
+        for(var i=0;i<temporaryArray.length;i++)
+        {
+            var id = Number(temporaryArray[i][1]);
+            results.push(this.get_product_by_id(id));     
+        }
+            
+        return results;
+    },
 
     });
+    
 });
