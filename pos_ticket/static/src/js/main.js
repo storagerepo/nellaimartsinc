@@ -49,7 +49,7 @@ odoo.define('pos_custom_model', function (require) {
         if (this.uploaded_picture) {
             fields.image = this.uploaded_picture;
         }
-
+        fields.mobile       = fields.phone;
         fields.id           = partner.id || false;
         fields.country_id   = fields.country_id || false;
 
